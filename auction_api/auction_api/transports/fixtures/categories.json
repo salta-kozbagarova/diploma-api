@@ -1,0 +1,74 @@
+[
+  {
+    "model": "categories.Category",
+    "fields": {
+      "name": "Транспорт",
+      "parent": null,
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 2,
+      "updated_by": 2,
+      "image": "categories/transport/car.png"
+    }
+  },
+  {
+    "model": "categories.Category",
+    "fields": {
+      "name": "Легковые с пробегом",
+      "parent": ["Транспорт"],
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 2,
+      "updated_by": 2,
+      "image": "categories/transport/used-car.svg"
+    }
+  },
+  {
+    "model": "categories.Category",
+    "fields": {
+      "name": "Легковые новые",
+      "parent": ["Транспорт"],
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 2,
+      "updated_by": 2,
+      "image": "categories/transport/new-car.svg"
+    }
+  },
+  {
+    "model": "categories.Category",
+    "fields": {
+      "name": "Мототехника",
+      "parent": ["Транспорт"],
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 2,
+      "updated_by": 2,
+      "image": "categories/transport/motorbike.svg"
+    }
+  },
+  {
+    "model": "categories.Category",
+    "fields": {
+      "name": "Грузовые автомобили",
+      "parent": ["Транспорт"],
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 2,
+      "updated_by": 2,
+      "image": "categories/transport/truck.svg"
+    }
+  },
+  {
+    "model": "categories.Category",
+    "fields": {
+      "name": "Прочий транспорт",
+      "parent": ["Транспорт"],
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 2,
+      "updated_by": 2,
+      "image": "categories/transport/loader.svg"
+    }
+  }
+]
