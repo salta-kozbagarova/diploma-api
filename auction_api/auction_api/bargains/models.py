@@ -16,9 +16,13 @@ class Bargain(AuctionBaseModel):
     current_price = models.DecimalField(max_digits=10, decimal_places=2)
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to=user_directory_path)
-
+    products = models.ManyToManyField('products.product', through='BargainProducts', through_fields=('bargain', 'product'))
     seen = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=0)
 
     class Meta:
         ordering = ('updated_at',)
+
+class BargainProducts(AuctionBaseModel):
+    bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None, related_name='bargain_products')
+    product = models.ForeignKey('products.product', on_delete=models.CASCADE, default=None, related_name='+')

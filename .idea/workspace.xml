@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f066da-3826-413f-bad5-028d9c4cd3e0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/fixtures/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/managers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/serializers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/base/fixtures/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/base/fixtures/languages.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/base/serializers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/base/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/categories/managers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0006_auto_20180123_1159.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/migrations/0003_auto_20180123_1159.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/migrations/0004_auto_20180123_1202.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/migrations/0005_auto_20180123_1453.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/search_radius/fixtures/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/search_radius/managers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/search_radius/serializers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/search_radius/urls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/carbody.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/carmake.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/carmodel.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/transmission.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/managers.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/migrations/0003_make_model.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/migrations/0004_auto_20180123_1218.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/migrations/0005_auto_20180123_1219.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/migrations/0006_auto_20180123_1334.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/migrations/0007_auto_20180123_1436.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/migrations/0008_auto_20180123_1453.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/categories/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/categories/models.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/categories/serializers.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/categories/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/common/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/common/models.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/products/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/models.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/products/serializers.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/products/urls.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/urls.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/products/views.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/views.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/transports/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/models.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/transports/serializers.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/transports/urls.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/urls.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/transports/views.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/views.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/users/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/users/models.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/users/serializers.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/users/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/users/urls.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/users/urls.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/users/views.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/users/views.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/config/settings/base.py" afterPath="$PROJECT_DIR$/auction_api/config/settings/base.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/config/urls.py" afterPath="$PROJECT_DIR$/auction_api/config/urls.py" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,12 +14,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auction_api/config/settings/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="148" column="7" lean-forward="false" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="96" lean-forward="false" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="96" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/auction_api/auction_api/transports/managers.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/carmake.json" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/carbody.json" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/products/models.py" />
@@ -118,7 +104,6 @@
         <option value="$PROJECT_DIR$/auction_api/auction_api/search_radius/serializers.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/search_radius/views.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/search_radius/urls.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/search_radius/models.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/serializers.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/fixtures/administrative_divisions.json" />
@@ -145,6 +130,8 @@
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0016_auto_20180123_1928.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0017_auto_20180123_1929.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/models.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" />
       </list>
     </option>
   </component>
@@ -186,6 +173,13 @@
               <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="bargains" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
@@ -328,14 +322,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/search_radius/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/search_radius/managers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -445,16 +431,6 @@
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,14 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/config/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="65" column="31" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/config/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -624,14 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/common/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="104" lean-forward="false" selection-start-line="6" selection-start-column="104" selection-end-line="6" selection-end-column="104" />
           <folding />
         </state>
       </provider>
@@ -756,10 +716,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/config/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="148" column="7" lean-forward="false" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/common/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="104" lean-forward="false" selection-start-line="6" selection-start-column="104" selection-end-line="6" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="96" lean-forward="false" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>

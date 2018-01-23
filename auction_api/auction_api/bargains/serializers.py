@@ -6,7 +6,7 @@ class BargainSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Bargain
         fields = ('url', 'id', 'end_date', 'bargain_type',
-                  'start_price', 'current_price', 'name', 'image',)
+                  'start_price', 'current_price', 'name', 'image', 'products', 'bargain_products')
 
 class BargainTypeSerializer(serializers.HyperlinkedModelSerializer):
 
