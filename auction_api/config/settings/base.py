@@ -61,6 +61,9 @@ LOCAL_APPS = [
     'auction_api.categories.apps.CategoriesConfig',
     'auction_api.products.apps.ProductsConfig',
     'auction_api.transports.apps.TransportsConfig',
+    'auction_api.administrative_division.apps.AdministrativeDivisionConfig',
+    'auction_api.search_radius.apps.SearchRadiusConfig',
+    'auction_api.base.apps.BaseConfig',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

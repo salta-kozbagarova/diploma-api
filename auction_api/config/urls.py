@@ -15,6 +15,9 @@ urlpatterns = [
     url(r'^categories/', include('auction_api.categories.urls')),
     url(r'^products/', include('auction_api.products.urls')),
     url(r'^transports/', include('auction_api.transports.urls')),
+    url(r'^administrative-divisions/', include('auction_api.administrative_division.urls')),
+    url(r'^search-radiuses/', include('auction_api.search_radius.urls')),
+    url(r'^base/', include('auction_api.base.urls')),
     url(r'^schema/$', schema_view),
 ]
 

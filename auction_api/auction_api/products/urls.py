@@ -6,6 +6,7 @@ from . import views
 router = DefaultRouter()
 router.register(r'products', views.ProductViewSet)
 router.register(r'product-images', views.ProductImageViewSet)
+router.register(r'colors', views.ColorViewSet)
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [

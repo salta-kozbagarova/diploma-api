@@ -1,13 +1,65 @@
-from .models import Transport, TransportImage
-from .serializers import TransportSerializer, TransportImageSerializer
+from .models import Car, CarMake, CarModel, TransportImage, CarBody, Transmission
+from .serializers import CarSerializer, CarMakeSerializer, CarModelSerializer, TransportImageSerializer, CarBodySerializer, TransmissionSerializer
 from rest_framework import viewsets
 
-class TransportViewSet(viewsets.ModelViewSet):
+class CarViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list` and `detail` actions.
     """
-    queryset = Transport.objects.all()
-    serializer_class = TransportSerializer
+    queryset = Car.objects.all()
+    serializer_class = CarSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user, updated_by=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save(updated_by=self.request.user)
+
+class CarMakeViewSet(viewsets.ModelViewSet):
+    """
+    This viewset automatically provides `list` and `detail` actions.
+    """
+    queryset = CarMake.objects.all()
+    serializer_class = CarMakeSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user, updated_by=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save(updated_by=self.request.user)
+
+class CarModelViewSet(viewsets.ModelViewSet):
+    """
+    This viewset automatically provides `list` and `detail` actions.
+    """
+    queryset = CarModel.objects.all()
+    serializer_class = CarModelSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user, updated_by=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save(updated_by=self.request.user)
+
+class CarBodyViewSet(viewsets.ModelViewSet):
+    """
+    This viewset automatically provides `list` and `detail` actions.
+    """
+    queryset = CarBody.objects.all()
+    serializer_class = CarBodySerializer
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user, updated_by=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save(updated_by=self.request.user)
+
+class TransmissionViewSet(viewsets.ModelViewSet):
+    """
+    This viewset automatically provides `list` and `detail` actions.
+    """
+    queryset = Transmission.objects.all()
+    serializer_class = TransmissionSerializer
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user, updated_by=self.request.user)
