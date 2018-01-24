@@ -1,258 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
 <django-objects version="1.0">
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Казахстан</field>
+    <field name="name" type="CharField">РљР°Р·Р°С…СЃС‚Р°РЅ</field>
     <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><None></None></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Страна</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РЎС‚СЂР°РЅР°</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Акмолинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Астана</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђСЃС‚Р°РЅР°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Кокшетау</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РљРѕРєС€РµС‚Р°Сѓ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Степногорск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РЎС‚РµРїРЅРѕРіРѕСЂСЃРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Акколь</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђРєРєРѕР»СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Аршалы</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђСЂС€Р°Р»С‹</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Астраханка</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђСЃС‚СЂР°С…Р°РЅРєР°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Атбасар</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђС‚Р±Р°СЃР°СЂ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Макинск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РњР°РєРёРЅСЃРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Щучинск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р©СѓС‡РёРЅСЃРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Егиндыколь</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р•РіРёРЅРґС‹РєРѕР»СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Степняк</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РЎС‚РµРїРЅСЏРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Ерейментау</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р•СЂРµР№РјРµРЅС‚Р°Сѓ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Есиль</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р•СЃРёР»СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Жаксы</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р–Р°РєСЃС‹</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Державинск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р”РµСЂР¶Р°РІРёРЅСЃРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Зеренда</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р—РµСЂРµРЅРґР°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Коргалжын</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РљРѕСЂРіР°Р»Р¶С‹РЅ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Балкашино</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р‘Р°Р»РєР°С€РёРЅРѕ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Акмол</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђРєРјРѕР»</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Шортанды</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РЁРѕСЂС‚Р°РЅРґС‹</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєРјРѕР»РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Актюбинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Актобе</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђРєС‚РѕР±Рµ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Алга</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РђР»РіР°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Жем</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р–РµРј</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Кандыагаш</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РљР°РЅРґС‹Р°РіР°С€</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Темир</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РўРµРјРёСЂ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Хромтау</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РҐСЂРѕРјС‚Р°Сѓ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Шалкар</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РЁР°Р»РєР°СЂ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Эмба</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р­РјР±Р°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Комсомольское</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РљРѕРјСЃРѕРјРѕР»СЊСЃРєРѕРµ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Карауылкельды</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РљР°СЂР°СѓС‹Р»РєРµР»СЊРґС‹</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Иргиз</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РСЂРіРёР·</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Бадамша</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">Р‘Р°РґР°РјС€Р°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Мартук</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РњР°СЂС‚СѓРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Уил</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РЈРёР»</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Шубаркудук</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РЁСѓР±Р°СЂРєСѓРґСѓРє</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Кобда</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
+    <field name="name" type="CharField">РљРѕР±РґР°</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РђРєС‚СЋР±РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</natural><natural>2</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Р“РѕСЂРѕРґ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Алматинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РђР»РјР°С‚РёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Атырауская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РђС‚С‹СЂР°СѓСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Восточно-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">Р’РѕСЃС‚РѕС‡РЅРѕ-РљР°Р·Р°С…СЃС‚Р°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Жамбылская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">Р–Р°РјР±С‹Р»СЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Западно-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">Р—Р°РїР°РґРЅРѕ-РљР°Р·Р°С…СЃС‚Р°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Карагандинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РљР°СЂР°РіР°РЅРґРёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Костанайская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РљРѕСЃС‚Р°РЅР°Р№СЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Кызылординская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РљС‹Р·С‹Р»РѕСЂРґРёРЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Мангистауская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РњР°РЅРіРёСЃС‚Р°СѓСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Павлодарская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РџР°РІР»РѕРґР°СЂСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Северо-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">РЎРµРІРµСЂРѕ-РљР°Р·Р°С…СЃС‚Р°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
-    <field name="name" type="CharField">Южно-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
-    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
+    <field name="name" type="CharField">Р®Р¶РЅРѕ-РљР°Р·Р°С…СЃС‚Р°РЅСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>РљР°Р·Р°С…СЃС‚Р°РЅ</natural><natural>1</natural></field>
+    <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>РћР±Р»Р°СЃС‚СЊ</natural></field>
   </object>
 </django-objects>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <django-objects version="1.0">
   <object model="administrative_division.administrativelevel">
-    <field name="name" type="CharField">Страна</field>
+    <field name="name" type="CharField">РЎС‚СЂР°РЅР°</field>
   </object>
   <object model="administrative_division.administrativelevel">
-    <field name="name" type="CharField">Область</field>
+    <field name="name" type="CharField">РћР±Р»Р°СЃС‚СЊ</field>
   </object>
   <object model="administrative_division.administrativelevel">
-    <field name="name" type="CharField">Город</field>
+    <field name="name" type="CharField">Р“РѕСЂРѕРґ</field>
   </object>
 </django-objects>

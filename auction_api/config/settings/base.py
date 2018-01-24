@@ -8,6 +8,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
 import environ
+from django.utils.translation import gettext_lazy as _
 
 ROOT_DIR = environ.Path(__file__) - 3  # (auction_api/config/settings/base.py - 3 = auction_api/)
 APPS_DIR = ROOT_DIR.path('auction_api')
@@ -41,6 +42,9 @@ DJANGO_APPS = [
     # Useful template tags:
     # 'django.contrib.humanize',
 
+    # Not Django app but should be put before django.contrib.admin in order to have the admin integration
+    'modeltranslation',  # model translation
+
     # Admin
     'django.contrib.admin',
     'rest_framework',
@@ -63,7 +67,6 @@ LOCAL_APPS = [
     'auction_api.transports.apps.TransportsConfig',
     'auction_api.administrative_division.apps.AdministrativeDivisionConfig',
     'auction_api.search_radius.apps.SearchRadiusConfig',
-    'auction_api.base.apps.BaseConfig',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -79,6 +82,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 # MIGRATIONS CONFIGURATION
@@ -142,6 +146,19 @@ TIME_ZONE = 'UTC'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = 'en-us'
+
+# See :https://docs.djangoproject.com/en/2.0/ref/settings/#languages
+LANGUAGES = [
+    ('ru', _('Russian')),
+    ('en', _('English')),
+    ('kk', _('Kazakh')),
+]
+
+MODELTRANSLATION_AUTO_POPULATE = True
+
+# Setting it to False enables setting individual values for certain languages in the fixtures
+# Setting it to True you can't use field_<lang> fields in the fixtures
+MODELTRANSLATION_LOADDATA_RETAIN_LOCALE = False
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1

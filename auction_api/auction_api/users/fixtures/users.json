@@ -1,0 +1,50 @@
+[
+  {
+    "model": "users.User",
+    "fields": {
+      "username": "admin",
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$SHUwc1Eyek95azBN$QTJGzcD8oXnYtqwxzcOLcA",
+      "email": "admin@demo.com",
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "users.User",
+    "fields": {
+      "username": "salta",
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$SHUwc1Eyek95azBN$QTJGzcD8oXnYtqwxzcOLcA",
+      "email": "salta.kozbagarova@gmail.com",
+      "first_name": "Saltanat",
+      "last_name": "Alikhanova",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+  {
+    "model": "users.User",
+    "fields": {
+      "username": "demo1",
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$SHUwc1Eyek95azBN$QTJGzcD8oXnYtqwxzcOLcA",
+      "email": "demo1@demo.com"
+    }
+  },
+  {
+    "model": "users.User",
+    "fields": {
+      "username": "demo2",
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$SHUwc1Eyek95azBN$QTJGzcD8oXnYtqwxzcOLcA",
+      "email": "demo2@demo.com"
+    }
+  },
+  {
+    "model": "users.User",
+    "fields": {
+      "username": "justuser",
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$SHUwc1Eyek95azBN$QTJGzcD8oXnYtqwxzcOLcA",
+      "email": "justuser@demo.com"
+    }
+  }
+]

@@ -17,8 +17,9 @@ urlpatterns = [
     url(r'^transports/', include('auction_api.transports.urls')),
     url(r'^administrative-divisions/', include('auction_api.administrative_division.urls')),
     url(r'^search-radiuses/', include('auction_api.search_radius.urls')),
-    url(r'^base/', include('auction_api.base.urls')),
     url(r'^schema/$', schema_view),
+    # Django Admin, use {% url 'admin:index' %}
+    url(settings.ADMIN_URL, admin.site.urls),
 ]
 
 urlpatterns += [
