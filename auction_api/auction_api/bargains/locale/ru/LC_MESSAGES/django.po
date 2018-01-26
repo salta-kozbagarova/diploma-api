@@ -20,11 +20,30 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\models.py:8
-msgid "Administrative Level"
-msgstr "Административный уровень"
+#: .\models.py:7
+msgid "Bargain Type"
+msgstr "Тип аукциона"
+
+#: .\models.py:14
+msgid "End Date"
+msgstr "Дата окончания"
 
 #: .\models.py:16
-#, fuzzy
-msgid "Administrative Division"
-msgstr "Административное деление"
+msgid "Start Price"
+msgstr "Начальная цена"
+
+#: .\models.py:17
+msgid "Current Price"
+msgstr "Текущая цена"
+
+#: .\models.py:18
+msgid "Bargain Name"
+msgstr "Наименование аукциона"
+
+#: .\models.py:19
+msgid "Image"
+msgstr "Картинка"
+
+#: .\models.py:21
+msgid "Seen"
+msgstr "Просмотрено"

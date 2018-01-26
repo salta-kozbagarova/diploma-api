@@ -6,6 +6,9 @@ from . import views
 router = DefaultRouter()
 router.register(r'bargains', views.BargainViewSet)
 router.register(r'bargain-types', views.BargainTypeViewSet)
+router.register(r'bargain-bets', views.BargainBetViewSet)
+router.register(r'bargain-comments', views.BargainCommentViewSet)
+router.register(r'bargain-addresses', views.BargainAddressViewSet)
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [

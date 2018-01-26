@@ -1,28 +1,48 @@
 from django.db import models
 from auction_api.categories.models import Category
 from auction_api.common.models import AuctionBaseModel
+from django.utils.translation import gettext_lazy as _
+from django.conf import settings
+from auction_api.administrative_division.models import AdministrativeDivision
+import datetime
 
 class BargainType(AuctionBaseModel):
-    name = models.TextField()
+    name = models.TextField(_('Bargain Type'))
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/bargains/<filename>
     return 'bargains/{0}'.format(filename)
 
 class Bargain(AuctionBaseModel):
-    end_date = models.DateTimeField()
+    end_date = models.DateTimeField(_('End Date'), default=datetime.datetime.now())
     bargain_type = models.ForeignKey(BargainType, on_delete=models.CASCADE, default=0)
-    start_price = models.DecimalField(max_digits=10, decimal_places=2)
-    current_price = models.DecimalField(max_digits=10, decimal_places=2)
-    name = models.CharField(max_length=255)
-    image = models.ImageField(upload_to=user_directory_path)
-    products = models.ManyToManyField('products.product', through='BargainProducts', through_fields=('bargain', 'product'))
-    seen = models.IntegerField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, default=0)
+    start_price = models.DecimalField(_('Start Price'), max_digits=10, decimal_places=2)
+    current_price = models.DecimalField(_('Current Price'), max_digits=10, decimal_places=2)
+    name = models.CharField(_('Bargain Name'), max_length=255)
+    image = models.ImageField(_('Image'), upload_to=user_directory_path)
+    seen = models.IntegerField(_('Seen'))
+    participants = models.ManyToManyField(settings.AUTH_USER_MODEL, through='BargainBet',
+                                          through_fields=('bargain', 'created_by'), related_name="bargains")
+    comments = models.ManyToManyField(settings.AUTH_USER_MODEL, through='BargainComment',
+                                          through_fields=('bargain', 'created_by'), related_name="bargain_comments")
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, default=None, related_name="bargains", null=True)
+    addresses = models.ManyToManyField(AdministrativeDivision, through='BargainAddress')
 
     class Meta:
         ordering = ('updated_at',)
 
-class BargainProducts(AuctionBaseModel):
-    bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None, related_name='bargain_products')
-    product = models.ForeignKey('products.product', on_delete=models.CASCADE, default=None, related_name='+')
+# class BargainProducts(AuctionBaseModel):
+#     bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None, related_name='bargain_products')
+#     product = models.ForeignKey('products.product', on_delete=models.CASCADE, default=None, related_name='+')
+
+class BargainBet(AuctionBaseModel):
+    bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None)
+    price = models.DecimalField(_('Price'), max_digits=10, decimal_places=2)
+
+class BargainComment(AuctionBaseModel):
+    bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None)
+    comment = models.TextField(_('Comment'))
+
+class BargainAddress(AuctionBaseModel):
+    bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None)
+    address = models.ForeignKey(AdministrativeDivision, on_delete=models.CASCADE, default=None)

@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f066da-3826-413f-bad5-028d9c4cd3e0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/locale/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/categories/locale/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/locale/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/search_radius/locale/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/transports/locale/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/users/locale/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/fixtures/bargain_types.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/fixtures/bargains.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/translation.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/en/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/en/LC_MESSAGES/django.po" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/kk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/kk/LC_MESSAGES/django.po" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/ru/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/ru/LC_MESSAGES/django.po" />
       <change beforePath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/administrative_division/models.py" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/bargains/urls.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/urls.py" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/bargains/views.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/bargains/views.py" />
+      <change beforePath="$PROJECT_DIR$/auction_api/auction_api/products/models.py" afterPath="$PROJECT_DIR$/auction_api/auction_api/products/models.py" />
       <change beforePath="$PROJECT_DIR$/auction_api/config/settings/base.py" afterPath="$PROJECT_DIR$/auction_api/config/settings/base.py" />
-      <change beforePath="$PROJECT_DIR$/auction_api/config/urls.py" afterPath="$PROJECT_DIR$/auction_api/config/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,87 +29,35 @@
       <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auction_api/config/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction_api/config/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="401">
+              <caret line="162" column="11" lean-forward="true" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#247#261#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/fixtures/users.json">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/common/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="322">
+              <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/models.py">
+        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state relative-caret-position="340">
+              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="django.po" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/kk/LC_MESSAGES/django.po">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="managers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/managers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -146,14 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/transmission.json" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/transports/views.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/transports/models.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/apps.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/users/models.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/search_radius/apps.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/search_radius/managers.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/users/serializers.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/users/views.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/users/urls.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/views.py" />
@@ -177,8 +120,6 @@
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0010_auto_20180123_1919.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0016_auto_20180123_1928.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0017_auto_20180123_1929.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/translation.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/admin.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/categories/translation.py" />
@@ -192,15 +133,25 @@
         <option value="$PROJECT_DIR$/auction_api/auction_api/common/models.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/categories.json" />
         <option value="$PROJECT_DIR$/auction_api/config/urls.py" />
-        <option value="$PROJECT_DIR$/auction_api/config/settings/base.py" />
-        <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/en/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/locale/kk/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/locale/en/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/locale/ru/LC_MESSAGES/django.po" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/ru/LC_MESSAGES/django.po" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/kk/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/en/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/translation.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/fixtures/bargain_types.json" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/products/models.py" />
         <option value="$PROJECT_DIR$/auction_api/auction_api/administrative_division/models.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/models.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/views.py" />
+        <option value="$PROJECT_DIR$/auction_api/auction_api/bargains/urls.py" />
+        <option value="$PROJECT_DIR$/auction_api/config/settings/base.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="411" />
     <option name="y" value="18" />
     <option name="width" value="1400" />
@@ -251,46 +202,66 @@
               <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
-              <item name="administrative_division" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
+              <item name="bargains" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
-              <item name="administrative_division" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
-              <item name="kk" type="462c0819:PsiDirectoryNode" />
+              <item name="bargains" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
-              <item name="administrative_division" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
-              <item name="kk" type="462c0819:PsiDirectoryNode" />
-              <item name="LC_MESSAGES" type="462c0819:PsiDirectoryNode" />
+              <item name="categories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
-              <item name="administrative_division" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
               <item name="auction_api" type="462c0819:PsiDirectoryNode" />
-              <item name="administrative_division" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-              <item name="LC_MESSAGES" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="transports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="transports" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diploma-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diploma-api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="auction_api" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,8 +309,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17913593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -348,7 +318,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30944625" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30944625" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,51 +340,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/base/fixtures/languages.json" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/base/views.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/base/urls.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/base/serializers.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/base/models.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/base/apps.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/translation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0021_auto_20180124_1440.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0020_auto_20180124_1439.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0019_auto_20180124_1437.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0018_auto_20180123_1929.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0017_auto_20180123_1929.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0016_auto_20180123_1928.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0015_auto_20180123_1927.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0014_auto_20180123_1923.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0013_category_name.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0012_remove_category_name.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0011_auto_20180123_1920.py" />
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0008_category_name.py" />
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -429,14 +354,6 @@
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0007_auto_20180123_1902.py" />
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0006_auto_20180123_1159.py" />
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/migrations/0005_auto_20180122_1851.py" />
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/fixtures/adm_divisions.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/fixtures/adm_levels.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -463,47 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="298" column="6" lean-forward="false" selection-start-line="298" selection-start-column="6" selection-end-line="298" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/categories.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/fixtures/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/managers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/config/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -547,62 +423,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/common/models.py">
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/locale/kk/LC_MESSAGES/django.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/config/settings/base.py">
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/locale/ru/LC_MESSAGES/django.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="510">
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/locale/en/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/kk/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/en/LC_MESSAGES/django.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="408">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/ru/LC_MESSAGES/django.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="493">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/models.py">
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/fixtures/adm_divisions.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/carbody.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/fixtures/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/config/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/locale/kk/LC_MESSAGES/django.po">
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/fixtures/bargain_types.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#70#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/transports/fixtures/categories.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/products/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/common/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        <state relative-caret-position="357">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/categories/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/products/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="90" lean-forward="false" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="111" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/transports/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="53" column="69" lean-forward="false" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/administrative_division/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2551">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-977">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/config/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="162" column="11" lean-forward="true" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+          <folding>
+            <element signature="e#247#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/fixtures/bargains.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction_api/auction_api/bargains/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

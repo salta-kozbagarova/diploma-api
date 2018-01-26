@@ -48,6 +48,7 @@ DJANGO_APPS = [
     # Admin
     'django.contrib.admin',
     'rest_framework',
+    'corsheaders',
 ]
 THIRD_PARTY_APPS = [
     'crispy_forms',  # Form layouts
@@ -75,9 +76,9 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIDDLEWARE CONFIGURATION
 # ------------------------------------------------------------------------------
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -145,7 +146,7 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 TIME_ZONE = 'UTC'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru' #'en-us'
 
 # See :https://docs.djangoproject.com/en/2.0/ref/settings/#languages
 LANGUAGES = [
@@ -157,12 +158,6 @@ LANGUAGES = [
 LOCALE_PATHS = [
     str(APPS_DIR.path('locale')),
 ]
-
-MODELTRANSLATION_AUTO_POPULATE = True
-
-# Setting it to False enables setting individual values for certain languages in the fixtures
-# Setting it to True you can't use field_<lang> fields in the fixtures
-MODELTRANSLATION_LOADDATA_RETAIN_LOCALE = False
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
@@ -310,3 +305,25 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+# See: http://django-modeltranslation.readthedocs.io/en/latest/
+MODELTRANSLATION_AUTO_POPULATE = True
+
+# Setting it to False enables setting individual values for certain languages in the fixtures
+# Setting it to True you can't use field_<lang> fields in the fixtures
+MODELTRANSLATION_LOADDATA_RETAIN_LOCALE = False
+
+#See: https://github.com/ottoyiu/django-cors-headers/#configuration
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'localhost:4200',
+    '127.0.0.1:4200',
+)
+
+# CSRF_TRUSTED_ORIGINS = (
+#     'localhost:4200',
+#     '127.0.0.1:4200',
+# )
+#
+# CORS_REPLACE_HTTPS_REFERER = True
