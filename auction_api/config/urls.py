@@ -6,21 +6,25 @@ from django.views import defaults as default_views
 
 from django.conf.urls import url, include
 from rest_framework.schemas import get_schema_view
+from django.conf.urls.i18n import i18n_patterns
 
 schema_view = get_schema_view(title='Pastebin API')
 
-urlpatterns = [
-    url(r'^bargains/', include('auction_api.bargains.urls')),
-    url(r'^users/', include('auction_api.users.urls')),
-    url(r'^categories/', include('auction_api.categories.urls')),
-    url(r'^products/', include('auction_api.products.urls')),
-    url(r'^transports/', include('auction_api.transports.urls')),
-    url(r'^administrative-divisions/', include('auction_api.administrative_division.urls')),
-    url(r'^search-radiuses/', include('auction_api.search_radius.urls')),
-    url(r'^schema/$', schema_view),
-    # Django Admin, use {% url 'admin:index' %}
-    url(settings.ADMIN_URL, admin.site.urls),
-]
+urlpatterns = i18n_patterns(
+    *(
+        url(r'^bargains/', include('auction_api.bargains.urls')),
+        url(r'^users/', include('auction_api.users.urls')),
+        url(r'^categories/', include('auction_api.categories.urls')),
+        url(r'^products/', include('auction_api.products.urls')),
+        url(r'^transports/', include('auction_api.transports.urls')),
+        url(r'^administrative-divisions/', include('auction_api.administrative_division.urls')),
+        url(r'^search-radiuses/', include('auction_api.search_radius.urls')),
+        url(r'^schema/$', schema_view),
+        # Django Admin, use {% url 'admin:index' %}
+        url(settings.ADMIN_URL, admin.site.urls)
+    ),
+    **{"prefix_default_language" : False}
+)
 
 urlpatterns += [
     url(r'^api-auth/', include('rest_framework.urls')),

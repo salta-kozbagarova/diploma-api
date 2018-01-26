@@ -1,10 +1,11 @@
 from django.db import models
 from .managers import AdministrativeLevelManager, AdministrativeDivisionManager
+from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 class AdministrativeLevel(models.Model):
     objects = AdministrativeLevelManager()
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(_('Administrative Level'), max_length=255, unique=True)
 
     def natural_key(self):
         return (self.name,)

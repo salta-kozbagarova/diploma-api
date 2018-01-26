@@ -77,12 +77,12 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware'
 ]
 
 # MIGRATIONS CONFIGURATION
@@ -152,6 +152,10 @@ LANGUAGES = [
     ('ru', _('Russian')),
     ('en', _('English')),
     ('kk', _('Kazakh')),
+]
+
+LOCALE_PATHS = [
+    str(APPS_DIR.path('locale')),
 ]
 
 MODELTRANSLATION_AUTO_POPULATE = True
