@@ -1,0 +1,18 @@
+[
+  {
+    "model": "categories.Category",
+    "fields": {
+      "code": "real-estate",
+      "name": "Недвижимость",
+      "name_ru": "Недвижимость",
+      "name_en": "Real Estate",
+      "name_kk": "Жылжымас мүлік",
+      "parent": null,
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 1,
+      "updated_by": 1,
+      "image": "categories/realestate/realty.jpg"
+    }
+  }
+]

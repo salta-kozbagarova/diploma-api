@@ -2,6 +2,7 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "transport",
       "name": "Транспорт",
       "name_ru": "Транспорт",
       "name_en": "Transport",
@@ -17,11 +18,12 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "used-cars",
       "name": "Легковые с пробегом",
       "name_ru": "Легковые с пробегом",
       "name_en": "Used cars",
       "name_kk": "Пайдаланылған көліктер",
-      "parent": ["Транспорт"],
+      "parent": ["transport"],
       "created_at": "2018-01-22 18:09:57.443+06",
       "updated_at": "2018-01-22 18:09:57.443+06",
       "created_by": 4,
@@ -32,11 +34,12 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "new-cars",
       "name": "Легковые новые",
       "name_ru": "Легковые новые",
       "name_en": "New cars",
       "name_kk": "Жаңа жеңіл автомобиль",
-      "parent": ["Транспорт"],
+      "parent": ["transport"],
       "created_at": "2018-01-22 18:09:57.443+06",
       "updated_at": "2018-01-22 18:09:57.443+06",
       "created_by": 4,
@@ -47,11 +50,12 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "mototechnics",
       "name": "Мототехника",
       "name_ru": "Мототехника",
       "name_en": "Mototechnics",
       "name_kk": "Мототехника",
-      "parent": ["Транспорт"],
+      "parent": ["transport"],
       "created_at": "2018-01-22 18:09:57.443+06",
       "updated_at": "2018-01-22 18:09:57.443+06",
       "created_by": 4,
@@ -62,11 +66,12 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "trucks",
       "name": "Грузовые автомобили",
       "name_ru": "Грузовые автомобили",
       "name_en": "Trucks",
       "name_kk": "Жүк автомобилі",
-      "parent": ["Транспорт"],
+      "parent": ["transport"],
       "created_at": "2018-01-22 18:09:57.443+06",
       "updated_at": "2018-01-22 18:09:57.443+06",
       "created_by": 4,
@@ -77,11 +82,12 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "air-transport",
       "name": "Воздушный транспорт",
       "name_ru": "Воздушный транспорт",
       "name_en": "Air transport",
       "name_kk": "Әуе жолы көлігі",
-      "parent": ["Транспорт"],
+      "parent": ["transport"],
       "created_at": "2018-01-22 18:09:57.443+06",
       "updated_at": "2018-01-22 18:09:57.443+06",
       "created_by": 4,
@@ -92,11 +98,12 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "other-transports",
       "name": "Прочий транспорт",
       "name_ru": "Прочий транспорт",
       "name_en": "Other transports",
       "name_kk": "Басқа транспорттар",
-      "parent": ["Транспорт"],
+      "parent": ["transport"],
       "created_at": "2018-01-22 18:09:57.443+06",
       "updated_at": "2018-01-22 18:09:57.443+06",
       "created_by": 4,

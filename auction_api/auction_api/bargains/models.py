@@ -4,17 +4,18 @@ from auction_api.common.models import AuctionBaseModel
 from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 from auction_api.administrative_division.models import AdministrativeDivision
-import datetime
+from django.utils import timezone
 
 class BargainType(AuctionBaseModel):
     name = models.TextField(_('Bargain Type'))
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/bargains/<filename>
-    return 'bargains/{0}'.format(filename)
+    category_folder = instance.category.root_parent.name_en.lower()
+    return 'bargains/{0}/{1}'.format(category_folder, filename)
 
 class Bargain(AuctionBaseModel):
-    end_date = models.DateTimeField(_('End Date'), default=datetime.datetime.now())
+    end_date = models.DateTimeField(_('End Date'), default=timezone.now())
     bargain_type = models.ForeignKey(BargainType, on_delete=models.CASCADE, default=0)
     start_price = models.DecimalField(_('Start Price'), max_digits=10, decimal_places=2)
     current_price = models.DecimalField(_('Current Price'), max_digits=10, decimal_places=2)

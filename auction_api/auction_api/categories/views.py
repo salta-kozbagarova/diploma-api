@@ -19,3 +19,14 @@ class CategoryViewSet(viewsets.ModelViewSet):
 
     def perform_update(self, serializer):
         serializer.save(updated_by=self.request.user)
+
+class RootCategoryViewSet(viewsets.ModelViewSet):
+
+    queryset = Category.objects.filter(parent=None)
+    serializer_class = CategorySerializer
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user, updated_by=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save(updated_by=self.request.user)

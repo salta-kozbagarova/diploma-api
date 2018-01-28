@@ -4,8 +4,7 @@ from . import views
 
 # Create a router and register our viewsets with it.
 router = DefaultRouter()
-router.register(r'categories', views.CategoryViewSet)
-router.register(r'root-categories', views.RootCategoryViewSet)
+router.register(r'headphones', views.HeadphoneViewSet)
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [

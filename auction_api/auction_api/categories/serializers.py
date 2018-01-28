@@ -6,4 +6,4 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Category
-        fields = ('url', 'id', 'name', 'image', 'parent')
+        fields = '__all__'

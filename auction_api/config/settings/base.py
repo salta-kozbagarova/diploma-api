@@ -68,6 +68,11 @@ LOCAL_APPS = [
     'auction_api.transports.apps.TransportsConfig',
     'auction_api.administrative_division.apps.AdministrativeDivisionConfig',
     'auction_api.search_radius.apps.SearchRadiusConfig',
+    'auction_api.arts.apps.ArtsConfig',
+    'auction_api.clothes.apps.ClothesConfig',
+    'auction_api.electronics.apps.ElectronicsConfig',
+    'auction_api.other.apps.OtherConfig',
+    'auction_api.real_estates.apps.RealEstatesConfig',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -84,6 +89,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 # MIGRATIONS CONFIGURATION
@@ -146,7 +152,7 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 TIME_ZONE = 'UTC'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'ru' #'en-us'
+LANGUAGE_CODE = 'ru' # 'en-us'
 
 # See :https://docs.djangoproject.com/en/2.0/ref/settings/#languages
 LANGUAGES = [
@@ -320,10 +326,3 @@ CORS_ORIGIN_WHITELIST = (
     'localhost:4200',
     '127.0.0.1:4200',
 )
-
-# CSRF_TRUSTED_ORIGINS = (
-#     'localhost:4200',
-#     '127.0.0.1:4200',
-# )
-#
-# CORS_REPLACE_HTTPS_REFERER = True
