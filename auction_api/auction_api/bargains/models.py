@@ -11,7 +11,7 @@ class BargainType(AuctionBaseModel):
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/bargains/<filename>
-    category_folder = instance.category.root_parent.name_en.lower()
+    category_folder = instance.category.root_parent.code
     return 'bargains/{0}/{1}'.format(category_folder, filename)
 
 class Bargain(AuctionBaseModel):

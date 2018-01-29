@@ -55,6 +55,8 @@ THIRD_PARTY_APPS = [
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+    'django_filters',
+    'rest_framework_filters',
 ]
 
 # Apps specific for this project go here.
@@ -326,3 +328,10 @@ CORS_ORIGIN_WHITELIST = (
     'localhost:4200',
     '127.0.0.1:4200',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+        #'rest_framework_filters.backends.RestFrameworkFilterBackend',
+    )
+}

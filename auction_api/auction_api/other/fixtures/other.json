@@ -2,6 +2,7 @@
   {
     "model": "categories.Category",
     "fields": {
+      "code": "other",
       "name": "other",
       "name_ru": "Прочее",
       "name_en": "Other",
