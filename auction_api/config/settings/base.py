@@ -75,6 +75,7 @@ LOCAL_APPS = [
     'auction_api.electronics.apps.ElectronicsConfig',
     'auction_api.other.apps.OtherConfig',
     'auction_api.real_estates.apps.RealEstatesConfig',
+    'auction_api.ad_banners.apps.AdBannersConfig',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

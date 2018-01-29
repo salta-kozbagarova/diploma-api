@@ -1,0 +1,58 @@
+[
+  {
+    "model": "ad_banners.AdBanner",
+    "fields": {
+      "name": "что-то",
+      "name_ru": "что-то",
+      "name_en": "smth",
+      "name_kk": "бірдеме",
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 1,
+      "updated_by": 1,
+      "image": "ad_banners/ad6.jpeg"
+    }
+  },
+  {
+    "model": "ad_banners.AdBanner",
+    "fields": {
+      "name": "что-то",
+      "name_ru": "что-то",
+      "name_en": "smth",
+      "name_kk": "бірдеме",
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 1,
+      "updated_by": 1,
+      "image": "ad_banners/ad7.jpeg"
+    }
+  },
+  {
+    "model": "ad_banners.AdBanner",
+    "fields": {
+      "name": "что-то",
+      "name_ru": "что-то",
+      "name_en": "smth",
+      "name_kk": "бірдеме",
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 1,
+      "updated_by": 1,
+      "image": "ad_banners/ad8.jpeg"
+    }
+  },
+  {
+    "model": "ad_banners.AdBanner",
+    "fields": {
+      "name": "что-то",
+      "name_ru": "что-то",
+      "name_en": "smth",
+      "name_kk": "бірдеме",
+      "created_at": "2018-01-22 18:09:57.443+06",
+      "updated_at": "2018-01-22 18:09:57.443+06",
+      "created_by": 1,
+      "updated_by": 1,
+      "image": "ad_banners/ad9.jpg"
+    }
+  }
+]

@@ -11,8 +11,9 @@ class BargainType(AuctionBaseModel):
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/bargains/<filename>
+    root_folder = instance._meta.app_label.lower()
     category_folder = instance.category.root_parent.code
-    return 'bargains/{0}/{1}'.format(category_folder, filename)
+    return '{0}/{1}/{2}'.format(root_folder, category_folder, filename)
 
 class Bargain(AuctionBaseModel):
     end_date = models.DateTimeField(_('End Date'), default=timezone.now())

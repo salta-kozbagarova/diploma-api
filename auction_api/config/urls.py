@@ -23,6 +23,7 @@ urlpatterns = i18n_patterns(
         url(r'^other/', include('auction_api.other.urls')),
         url(r'^real-estates/', include('auction_api.real_estates.urls')),
         url(r'^administrative-divisions/', include('auction_api.administrative_division.urls')),
+        url(r'^ad-banners/', include('auction_api.ad_banners.urls')),
         url(r'^search-radiuses/', include('auction_api.search_radius.urls')),
         url(r'^schema/$', schema_view),
         # Django Admin, use {% url 'admin:index' %}
