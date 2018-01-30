@@ -14,7 +14,7 @@ class AdministrativeDivision(models.Model):
     objects = AdministrativeDivisionManager()
 
     name = models.CharField(_('Administrative Division'), max_length=255)
-    parent = models.ForeignKey('self', on_delete=models.CASCADE, default=None, null=True)
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, default=None, null=True, related_name='subdivisions')
     administrative_level = models.ForeignKey(AdministrativeLevel, on_delete=models.PROTECT, default=None, null=True)
 
     def natural_key(self):

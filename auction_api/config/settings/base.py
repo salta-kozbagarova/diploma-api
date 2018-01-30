@@ -61,6 +61,7 @@ THIRD_PARTY_APPS = [
 
 # Apps specific for this project go here.
 LOCAL_APPS = [
+    'auction_api.common.apps.CommonConfig',
     # custom users app
     'auction_api.users.apps.UsersConfig',
     # Your stuff: custom apps go here

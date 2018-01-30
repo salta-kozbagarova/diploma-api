@@ -6,8 +6,9 @@ from django.template.defaultfilters import slugify
 # Create your models here.
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/categories/<root_category_name>/<filename>
+    root_folder = instance._meta.app_label.lower()
     folder_name = instance.root_parent.code
-    return 'categories/{0}/{1}'.format(folder_name, filename)
+    return '{0}/{1}/{2}'.format(root_folder, folder_name, filename)
 
 class Category(AuctionBaseModel):
     objects = CategoryManager()
