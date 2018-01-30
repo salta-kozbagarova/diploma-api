@@ -7,252 +7,252 @@
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Акмолинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Астана</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Кокшетау</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Степногорск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Акколь</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Аршалы</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Астраханка</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Атбасар</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Макинск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Щучинск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Егиндыколь</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Степняк</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Ерейментау</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Есиль</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Жаксы</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Державинск</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Зеренда</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Коргалжын</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Балкашино</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Акмол</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Шортанды</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Акмолинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Актюбинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Актобе</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Алга</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Жем</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Кандыагаш</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Темир</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Хромтау</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Шалкар</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Эмба</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Комсомольское</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Карауылкельды</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Иргиз</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Бадамша</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Мартук</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Уил</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Шубаркудук</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Кобда</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>2</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Актюбинская область</natural><natural>Область</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Город</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Алматинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Атырауская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Восточно-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Жамбылская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Западно-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Карагандинская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Костанайская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Кызылординская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Мангистауская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Павлодарская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Северо-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
   <object model="administrative_division.administrativedivision">
     <field name="name" type="CharField">Южно-Казахстанская область</field>
-    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>1</natural></field>
+    <field name="parent" rel="ManyToOneRel" to="administrative_division.administrativedivision"><natural>Казахстан</natural><natural>Страна</natural></field>
     <field name="administrative_level" rel="ManyToOneRel" to="administrative_division.administrativelevel"><natural>Область</natural></field>
   </object>
 </django-objects>

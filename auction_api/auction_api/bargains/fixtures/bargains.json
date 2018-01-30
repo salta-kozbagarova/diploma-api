@@ -15,8 +15,8 @@
   {
     "model": "bargains.bargaintype",
     "fields": {
-      "name": "increasing",
-      "name_ru": "increasing",
+      "name": "на понижение",
+      "name_ru": "на понижение",
       "name_en": "decreasing",
       "name_kk": "азаюшы",
       "created_at": "2018-01-22 18:09:57.443+06",
@@ -28,20 +28,121 @@
   {
     "model": "bargains.bargain",
     "fields": {
-      "created_by": 4,
-      "updated_by": 4,
+      "created_by": 1,
+      "updated_by": 1,
       "created_at": "2018-01-26T10:28:56.940Z",
       "updated_at": "2018-01-26T10:28:56.940Z",
       "is_active": true,
       "is_deleted": false,
-      "end_date": "2018-01-26T16:28:19.908Z",
-      "bargain_type": 2,
+      "end_date": "2018-01-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
       "start_price": "4880000.00",
       "current_price": "5200000.00",
       "name": "Mercedes benz S class 350",
       "image": "bargains/transport/download.png",
       "seen": 458,
-      "category": ["transport"]
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"]
+    }
+  },
+  {
+    "model": "bargains.bargain",
+    "fields": {
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2018-01-26T10:28:56.940Z",
+      "updated_at": "2018-01-26T10:28:56.940Z",
+      "is_active": true,
+      "is_deleted": false,
+      "end_date": "2018-01-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
+      "start_price": "7080000.00",
+      "current_price": "7900000.00",
+      "name": "Audi A3",
+      "image": "bargains/transport/download (1).png",
+      "seen": 15,
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"]
+    }
+  },
+  {
+    "model": "bargains.bargain",
+    "fields": {
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2018-01-26T10:28:56.940Z",
+      "updated_at": "2018-01-26T10:28:56.940Z",
+      "is_active": true,
+      "is_deleted": false,
+      "end_date": "2018-01-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
+      "start_price": "4880000.00",
+      "current_price": "5200000.00",
+      "name": "Волга 21",
+      "image": "bargains/transport/download (2).png",
+      "seen": 15,
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"]
+    }
+  },
+  {
+    "model": "bargains.bargain",
+    "fields": {
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2018-01-26T10:28:56.940Z",
+      "updated_at": "2018-01-26T10:28:56.940Z",
+      "is_active": true,
+      "is_deleted": false,
+      "end_date": "2018-01-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
+      "start_price": "4880000.00",
+      "current_price": "5200000.00",
+      "name": "Renault Captur",
+      "image": "bargains/transport/download (3).png",
+      "seen": 15,
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"]
+    }
+  },
+  {
+    "model": "bargains.bargain",
+    "fields": {
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2018-01-26T10:28:56.940Z",
+      "updated_at": "2018-01-26T10:28:56.940Z",
+      "is_active": true,
+      "is_deleted": false,
+      "end_date": "2018-01-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
+      "start_price": "4880000.00",
+      "current_price": "5200000.00",
+      "name": "Волга 21",
+      "image": "bargains/transport/download (2).png",
+      "seen": 15,
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"]
+    }
+  },
+  {
+    "model": "bargains.bargain",
+    "fields": {
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2018-01-26T10:28:56.940Z",
+      "updated_at": "2018-01-26T10:28:56.940Z",
+      "is_active": true,
+      "is_deleted": false,
+      "end_date": "2018-01-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
+      "start_price": "4880000.00",
+      "current_price": "5200000.00",
+      "name": "Renault Captur",
+      "image": "bargains/transport/download (3).png",
+      "seen": 15,
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"]
     }
   }
 ]

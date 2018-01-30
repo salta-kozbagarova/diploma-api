@@ -5,5 +5,5 @@ class AdministrativeLevelManager(models.Manager):
         return self.get(name=name)
 
 class AdministrativeDivisionManager(models.Manager):
-    def get_by_natural_key(self, name, administrative_level_id):
-        return self.get(name=name, administrative_level_id=administrative_level_id)
+    def get_by_natural_key(self, name, administrative_level__name):
+        return self.get(name=name, administrative_level__name=administrative_level__name)

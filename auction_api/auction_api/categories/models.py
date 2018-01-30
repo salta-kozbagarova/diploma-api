@@ -27,6 +27,30 @@ class Category(AuctionBaseModel):
         else:
             self.parent
 
+    @property
+    def all_children(self):
+        cats = self.subcategories.all()
+        if len(cats):
+            child = []
+            for cat in cats:
+                child += [cat.all_children]
+            child += [self]
+            return child
+        else:
+            return [self]
+
+    @property
+    def all_children_id(self):
+        cats = self.subcategories.all()
+        if len(cats):
+            child = []
+            for cat in cats:
+                child += cat.all_children_id
+            child += [self.pk]
+            return child
+        else:
+            return [self.pk]
+
     def save(self, *args, **kwargs):
         if not self.id:
             self.code = slugify(self.name)

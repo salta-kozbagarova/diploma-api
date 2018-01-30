@@ -18,10 +18,17 @@ class AdministrativeDivision(models.Model):
     administrative_level = models.ForeignKey(AdministrativeLevel, on_delete=models.PROTECT, default=None, null=True)
 
     def natural_key(self):
-        return (self.name,self.administrative_level_id)
+        return (self.name,self.administrative_level.name)
 
     def __unicode__(self):
         return self.name
+
+    def get_full_address(self):
+        if self.parent:
+            full_name = self.parent.get_full_address()
+            return '{0}, {1}'.format(full_name, self.name)
+        else:
+            return self.name
 
     class Meta:
         unique_together = ('name', 'administrative_level')
