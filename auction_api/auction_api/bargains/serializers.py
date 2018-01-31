@@ -33,10 +33,7 @@ class BargainSerializer(serializers.HyperlinkedModelSerializer):
     participants_count = serializers.SerializerMethodField()
     category = CategorySerializer()
     bargain_type = BargainTypeSerializer()
-    created_by = serializers.HyperlinkedRelatedField(
-        view_name='user-detail',
-        read_only=True
-    )
+    created_by = UserSerializer()
     updated_by = serializers.HyperlinkedRelatedField(
         view_name='user-detail',
         read_only=True

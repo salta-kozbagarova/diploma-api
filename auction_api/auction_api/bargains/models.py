@@ -38,10 +38,6 @@ class Bargain(AuctionBaseModel):
     class Meta:
         ordering = ('updated_at',)
 
-# class BargainProducts(AuctionBaseModel):
-#     bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None, related_name='bargain_products')
-#     product = models.ForeignKey('products.product', on_delete=models.CASCADE, default=None, related_name='+')
-
 class BargainBet(AuctionBaseModel):
     bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None)
     price = models.DecimalField(_('Price'), max_digits=10, decimal_places=2)
