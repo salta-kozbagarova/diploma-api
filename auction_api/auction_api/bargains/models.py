@@ -26,6 +26,7 @@ class Bargain(AuctionBaseModel):
     start_price = models.DecimalField(_('Start Price'), max_digits=10, decimal_places=2)
     current_price = models.DecimalField(_('Current Price'), max_digits=10, decimal_places=2)
     name = models.CharField(_('Bargain Name'), max_length=255)
+    description = models.TextField(_('Bargain Description'), default=None)
     image = models.ImageField(_('Image'), upload_to=user_directory_path)
     seen = models.IntegerField(_('Seen'))
     participants = models.ManyToManyField(settings.AUTH_USER_MODEL, through='BargainBet',

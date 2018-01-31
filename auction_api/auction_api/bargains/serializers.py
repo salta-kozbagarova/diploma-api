@@ -45,7 +45,7 @@ class BargainSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Bargain
         fields = ('url', 'id', 'end_date', 'bargain_type',
-                  'start_price', 'current_price', 'name', 'image', 'products', 'seen', 'participants',
+                  'start_price', 'current_price', 'name', 'description', 'image', 'products', 'seen', 'participants',
                   'participants_count', 'category', 'comments',
                   'address', 'full_address', 'created_by', 'updated_by', 'created_at', 'updated_at')
 
@@ -54,7 +54,7 @@ class BargainSerializer(serializers.HyperlinkedModelSerializer):
 
     def get_full_address(self, obj):
         if obj.address:
-            return obj.address.get_full_address()
+            return obj.address.full_address
         else:
             return ''
 

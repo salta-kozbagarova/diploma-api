@@ -1,0 +1,51 @@
+[
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 0,
+      "metric": "км"
+    }
+  },
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 5,
+      "metric": "км"
+    }
+  },
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 10,
+      "metric": "км"
+    }
+  },
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 50,
+      "metric": "км"
+    }
+  },
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 100,
+      "metric": "км"
+    }
+  },
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 150,
+      "metric": "км"
+    }
+  },
+  {
+    "model": "search_radius.SearchRadius",
+    "fields": {
+      "radius": 200,
+      "metric": "км"
+    }
+  }
+]

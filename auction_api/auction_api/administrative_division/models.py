@@ -23,12 +23,25 @@ class AdministrativeDivision(models.Model):
     def __unicode__(self):
         return self.name
 
-    def get_full_address(self):
+    @property
+    def full_address(self):
         if self.parent:
-            full_name = self.parent.get_full_address()
+            full_name = self.parent.full_address
             return '{0}, {1}'.format(full_name, self.name)
         else:
             return self.name
+
+    @property
+    def all_children_id(self):
+        adms = self.subdivisions.all()
+        if len(adms):
+            child = []
+            for adm in adms:
+                child += adm.all_children_id
+            child += [self.pk]
+            return child
+        else:
+            return [self.pk]
 
     class Meta:
         unique_together = ('name', 'administrative_level')
