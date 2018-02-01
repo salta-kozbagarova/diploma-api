@@ -55,18 +55,10 @@ class BargainAddressFilter(filters.FilterSet):
             return None
 
 class BargainFilter(filters.FilterSet):
-    only_with_image = filters.BooleanFilter(name='image', method='bargain_only_with_image')
     category = filters.RelatedFilter(BargainCategoryFilter, name='category', queryset=Category.objects.all())
     address = filters.RelatedFilter(BargainAddressFilter, name='address', queryset=AdministrativeDivision.objects.all())
     current_price = filters.NumericRangeFilter(name='current_price')
-    #header_and_description = filters.BooleanFilter()
 
     class Meta:
         model = Bargain
         fields = ('id', 'bargain_type', 'start_price', 'current_price', 'name', 'category', 'address', 'is_active')
-
-    def bargain_only_with_image(self, qs, name, value):
-        isnull = not value
-        lookup_expr = LOOKUP_SEP.join([name, 'isnull'])
-
-        return qs.filter(**{lookup_expr: isnull})
