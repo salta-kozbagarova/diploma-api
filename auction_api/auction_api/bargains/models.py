@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 from auction_api.administrative_division.models import AdministrativeDivision
 from .managers import BargainTypeManager
+from auction_api.products.models import Product
 from django.utils import timezone
 
 class BargainType(AuctionBaseModel):
@@ -35,6 +36,7 @@ class Bargain(AuctionBaseModel):
                                           through_fields=('bargain', 'created_by'), related_name="bargain_comments")
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, default=None, related_name="bargains", null=True)
     address = models.ForeignKey(AdministrativeDivision, on_delete=models.SET_NULL, default=None, related_name="bargain_addresses", null=True)
+    product = models.OneToOneField(Product, on_delete=models.CASCADE, default=None, null=True)
 
     class Meta:
         ordering = ('updated_at',)

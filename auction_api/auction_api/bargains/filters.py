@@ -12,6 +12,7 @@ def categories(request):
 class BargainCategoryFilter(filters.FilterSet):
     id = filters.NumberFilter(name='id', method='categories_in_id')
     code = filters.CharFilter(name='id', method='categories_in_code')
+    name = filters.CharFilter(name='id', method='categories_in_name')
 
     class Meta:
         model = Category
@@ -37,8 +38,19 @@ class BargainCategoryFilter(filters.FilterSet):
         except Category.DoesNotExist:
             return None
 
+    def categories_in_name(self, qs, name, value):
+        # TODO: may be to improve try catch block
+        try:
+            category = Category.objects.get(name=value)
+            cat_ids = category.all_children_id
+            lookup_expr = LOOKUP_SEP.join([name, 'in'])
+            return qs.filter(**{lookup_expr: cat_ids})
+        except Category.DoesNotExist:
+            return None
+
 class BargainAddressFilter(filters.FilterSet):
     id = filters.NumberFilter(name='id', method='addresses_in_id')
+    name = filters.CharFilter(name='id', method='addresses_in_name')
 
     class Meta:
         model = AdministrativeDivision
@@ -54,11 +66,22 @@ class BargainAddressFilter(filters.FilterSet):
         except AdministrativeDivision.DoesNotExist:
             return None
 
+    def addresses_in_name(self, qs, name, value):
+        # TODO: may be to improve try catch block
+        try:
+            adm = AdministrativeDivision.objects.get(name=value)
+            adm_ids = adm.all_children_id
+            lookup_expr = LOOKUP_SEP.join([name, 'in'])
+            return qs.filter(**{lookup_expr: adm_ids})
+        except AdministrativeDivision.DoesNotExist:
+            return None
+
 class BargainFilter(filters.FilterSet):
     category = filters.RelatedFilter(BargainCategoryFilter, name='category', queryset=Category.objects.all())
     address = filters.RelatedFilter(BargainAddressFilter, name='address', queryset=AdministrativeDivision.objects.all())
     current_price = filters.NumericRangeFilter(name='current_price')
+    name = filters.AllLookupsFilter(name='name')
 
     class Meta:
         model = Bargain
-        fields = ('id', 'bargain_type', 'start_price', 'current_price', 'name', 'category', 'address', 'is_active')
+        fields = ('id', 'name', 'description', 'bargain_type', 'start_price', 'current_price', 'name', 'category', 'address', 'is_active')

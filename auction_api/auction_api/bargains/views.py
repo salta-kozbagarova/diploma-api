@@ -4,9 +4,7 @@ from rest_framework import viewsets
 from .permissions import IsAdminOrReadOnly
 from .filters import BargainFilter
 from django.db.models import Q
-from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
-from rest_framework.views import APIView
 # Create your views here.
 
 class BargainViewSet(viewsets.ModelViewSet):
@@ -15,15 +13,6 @@ class BargainViewSet(viewsets.ModelViewSet):
     serializer_class = BargainSerializer
     permission_classes = (IsAdminOrReadOnly,)
     filter_class = BargainFilter
-
-    # only_quantity = False
-    #
-    # def get(self, request, format=None):
-    #     print(self.only_quantity)
-    #     if self.only_quantity == 'true':
-    #         content = {'count': self.queryset.count()}
-    #         return Response(content)
-
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user, updated_by=self.request.user)
@@ -40,14 +29,22 @@ class BargainViewSet(viewsets.ModelViewSet):
         header_and_description = self.request.query_params.get('header_and_description', None)
         if q is not None:
             if header_and_description is not None and header_and_description == 'true':
-                self.queryset = self.queryset.filter(Q(name__contains=q) | Q(description__contains=q))
+                self.queryset = self.queryset.filter(Q(name__icontains=q) | Q(description__icontains=q))
             else:
-                self.queryset = self.queryset.filter(name__contains=q)
+                self.queryset = self.queryset.filter(name__icontains=q)
         only_with_image = self.request.query_params.get('only_with_image', None)
         if only_with_image == 'true':
             self.queryset = self.queryset.filter(image__isnull=False).exclude(image='')
-        self.only_quantity = self.request.query_params.get('only_quantity', None)
         return self.queryset
+
+    def list(self, request, *args, **kwargs):
+        only_quantity = request.query_params.get('only_quantity', None)
+        if only_quantity is not None and only_quantity == 'true':
+            queryset = self.filter_queryset(self.get_queryset())
+            count = queryset.count()
+            return Response(count)
+        else:
+            return super(BargainViewSet, self).list(request, *args, **kwargs)
 
 class BargainTypeViewSet(viewsets.ModelViewSet):
 
