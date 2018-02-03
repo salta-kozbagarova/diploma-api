@@ -3,7 +3,7 @@ from .serializers import CategorySerializer
 from rest_framework import viewsets
 from .filters import CategoryFilter
 from .permissions import IsAdminOrReadOnly
-# Create your views here.
+from rest_framework import permissions
 
 class CategoryViewSet(viewsets.ModelViewSet):
 
