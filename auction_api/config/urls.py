@@ -7,6 +7,9 @@ from django.views import defaults as default_views
 from django.conf.urls import url, include
 from rest_framework.schemas import get_schema_view
 from django.conf.urls.i18n import i18n_patterns
+from rest_framework_jwt.views import obtain_jwt_token
+from rest_framework_jwt.views import refresh_jwt_token
+from rest_framework_jwt.views import verify_jwt_token
 
 schema_view = get_schema_view(title='Pastebin API')
 
@@ -27,7 +30,10 @@ urlpatterns = i18n_patterns(
         url(r'^search-radiuses/', include('auction_api.search_radius.urls')),
         url(r'^schema/$', schema_view),
         # Django Admin, use {% url 'admin:index' %}
-        url(settings.ADMIN_URL, admin.site.urls)
+        url(settings.ADMIN_URL, admin.site.urls),
+        url(r'^api-token-auth/', obtain_jwt_token),
+        url(r'^api-token-refresh/', refresh_jwt_token),
+        url(r'^api-token-verify/', verify_jwt_token),
     ),
     **{"prefix_default_language" : False}
 )
