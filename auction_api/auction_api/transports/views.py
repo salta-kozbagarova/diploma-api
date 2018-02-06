@@ -1,6 +1,7 @@
 from .models import Car, CarMake, CarModel, TransportImage, CarBody, Transmission
 from .serializers import CarSerializer, CarMakeSerializer, CarModelSerializer, TransportImageSerializer, CarBodySerializer, TransmissionSerializer
 from rest_framework import viewsets
+from rest_framework.parsers import FormParser,MultiPartParser
 
 class CarViewSet(viewsets.ModelViewSet):
     """
@@ -8,6 +9,7 @@ class CarViewSet(viewsets.ModelViewSet):
     """
     queryset = Car.objects.all()
     serializer_class = CarSerializer
+    parser_classes = (MultiPartParser, FormParser,)
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user, updated_by=self.request.user)

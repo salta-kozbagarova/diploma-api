@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-06 15:59+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\models.py:104
+msgid "Manifacture Year"
+msgstr "Шыққан жылы"
+
+#: .\models.py:105
+msgid "Engine Volume"
+msgstr "Қозғалтқыш көлемі"
+
+#: .\models.py:107
+msgid "Mileage"
+msgstr "Жүгіру"
+
+#: .\models.py:108
+msgid "Steering"
+msgstr "Рульдік басқару"
+
+#: .\models.py:109
+msgid "Metallic"
+msgstr "Металлик"
+
+#: .\models.py:110
+msgid "Customs cleared"
+msgstr "Кеденнен өткізілді"
+
+#: .\models.py:111
+msgid "State"
+msgstr "Жағдай"
+
+#: .\models.py:112
+msgid "Drive"
+msgstr "Жетек"
+
+#: .\translation.py:7
+msgid "-- sorry, no translation provided --"
+msgstr "-- кешіріңіз, бұл жер аударылмаған --"

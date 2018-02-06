@@ -114,85 +114,127 @@
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "седан"
+      "title": "седан",
+      "title_ru": "седан",
+      "title_en": "sedan",
+      "title_kk": "седан"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "хэтчбэк"
+      "title": "хэтчбэк",
+      "title_ru": "хэтчбэк",
+      "title_en": "hatchback",
+      "title_kk": "хэтчбэк"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "универсал"
+      "title": "универсал",
+      "title_ru": "универсал",
+      "title_en": "station wagon",
+      "title_kk": "универсал"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "купе"
+      "title": "купе",
+      "title_ru": "купе",
+      "title_en": "coupe",
+      "title_kk": "купе"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "лимузин"
+      "title": "лимузин",
+      "title_ru": "лимузин",
+      "title_en": "limousine",
+      "title_kk": "лимузин"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "минивэн"
+      "title": "минивэн",
+      "title_ru": "минивэн",
+      "title_en": "minivan",
+      "title_kk": "минивэн"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "лифтбэк"
+      "title": "лифтбэк",
+      "title_ru": "лифтбэк",
+      "title_en": "liftback",
+      "title_kk": "лифтбэк"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "кабриолет"
+      "title": "кабриолет",
+      "title_ru": "кабриолет",
+      "title_en": "cabriolet",
+      "title_kk": "кабриолет"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "родстер"
+      "title": "родстер",
+      "title_ru": "родстер",
+      "title_en": "roadster",
+      "title_kk": "родстер"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "внедорожник"
+      "title": "внедорожник",
+      "title_ru": "внедорожник",
+      "title_en": "SUV",
+      "title_kk": "внедорожник"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "кроссовер"
+      "title": "кроссовер",
+      "title_ru": "кроссовер",
+      "title_en": "crossover",
+      "title_kk": "кроссовер"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "микроавтобус"
+      "title": "микроавтобус",
+      "title_ru": "микроавтобус",
+      "title_en": "minibus",
+      "title_kk": "микроавтобус"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "фургон"
+      "title": "фургон",
+      "title_ru": "фургон",
+      "title_en": "van",
+      "title_kk": "фургон"
     }
   },
   {
     "model": "transports.carbody",
     "fields": {
-      "title": "пикап"
+      "title": "пикап",
+      "title_ru": "пикап",
+      "title_en": "pickup",
+      "title_kk": "пикап"
     }
   },
   {

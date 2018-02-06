@@ -2,6 +2,7 @@ from django.db import models
 from auction_api.products.models import Product, ProductImage
 import datetime
 from .managers import CarMakeManager
+from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 class Transport(models.Model):
@@ -27,6 +28,12 @@ class CarMake(models.Model):
     def natural_key(self):
         return (self.code,)
 
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ('title',)
+
 class CarModel(models.Model):
     code = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
@@ -35,20 +42,36 @@ class CarModel(models.Model):
     def natural_key(self):
         return (self.code,)
 
+    def __str__(self):
+        return self.title
+
     class Meta:
         unique_together = ("make", "code")
+        ordering = ('title',)
 
 class CarBody(models.Model):
     title = models.CharField(max_length=255, unique=True)
 
     def natural_key(self):
-        return (self.title)
+        return (self.title,)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ('title',)
 
 class Transmission(models.Model):
     title = models.CharField(max_length=255, unique=True)
 
     def natural_key(self):
         return (self.title)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ('title',)
 
 class Car(Transport, Product):
     YEAR_CHOICES = ((r, r) for r in range(1960, datetime.date.today().year + 1))
@@ -78,12 +101,12 @@ class Car(Transport, Product):
     make = models.ForeignKey(CarMake, on_delete=models.DO_NOTHING, related_name="+", default=None)
     model = models.ForeignKey(CarModel, on_delete=models.DO_NOTHING, related_name="+", default=None)
     body = models.ForeignKey(CarBody, on_delete=models.DO_NOTHING, related_name="+", default=None)
-    manifacture_year = models.IntegerField(choices=YEAR_CHOICES, default=datetime.datetime.now().year)
-    engine_volume = models.FloatField()
+    manifacture_year = models.IntegerField(_('Manifacture Year'), choices=YEAR_CHOICES, default=datetime.datetime.now().year)
+    engine_volume = models.FloatField(_('Engine Volume'))
     transmission = models.ForeignKey(Transmission, on_delete=models.DO_NOTHING, related_name="+", default=None, null=True)
-    mileage = models.CharField(max_length=255)
-    steering = models.CharField(max_length=255, choices=STEERING_CHOICES, default=STEERING_LEFT)
-    metallic = models.BooleanField(default=False)
-    customs_cleared = models.BooleanField()
-    state = models.CharField(max_length=255, choices=STATE_CHOICES)
-    drive = models.CharField(max_length=255, choices=DRIVE_CHOICES)
+    mileage = models.CharField(_('Mileage'), max_length=255)
+    steering = models.CharField(_('Steering'), max_length=255, choices=STEERING_CHOICES, default=STEERING_LEFT)
+    metallic = models.BooleanField(_('Metallic'), default=False)
+    customs_cleared = models.BooleanField(_('Customs cleared'))
+    state = models.CharField(_('State'), max_length=255, choices=STATE_CHOICES)
+    drive = models.CharField(_('Drive'), max_length=255, choices=DRIVE_CHOICES)
