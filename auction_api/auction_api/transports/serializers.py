@@ -11,7 +11,7 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
     # productimage_related = serializers.ListField(
     #     child=serializers.ImageField()
     # )
-    productimage_related = serializers.ImageField()
+    #productimage_related = serializers.ImageField()
 
     class Meta:
         model = Car
