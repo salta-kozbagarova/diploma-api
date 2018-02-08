@@ -11,7 +11,7 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
     # productimage_related = serializers.ListField(
     #     child=serializers.ImageField()
     # )
-    #productimage_related = serializers.ImageField()
+    productimage_related = serializers.ImageField()
 
     class Meta:
         model = Car
@@ -20,12 +20,12 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
                   'transmission', 'mileage', 'steering', 'color', 'metallic', 'customs_cleared', 'state', 'drive',
                   'productimage_related')
 
-    # def create(self, validated_data):
-    #     carimage = validated_data.pop('productimage_related')
-    #     car = Car.objects.create(**validated_data)
-    #     #TransportImageSerializer.create(TransportImageSerializer(), validated_data=carimage)
-    #     TransportImage.objects.create(product=car, image=carimage)
-    #     return car
+    def create(self, validated_data):
+        carimage = validated_data.pop('productimage_related')
+        car = Car.objects.create(**validated_data)
+        #TransportImageSerializer.create(TransportImageSerializer(), validated_data=carimage)
+        TransportImage.objects.create(product=car, image=carimage)
+        return car
 
 class CarMakeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
