@@ -9,7 +9,7 @@ class CarViewSet(viewsets.ModelViewSet):
     """
     queryset = Car.objects.all()
     serializer_class = CarSerializer
-    #parser_classes = (MultiPartParser, FormParser,)
+    parser_classes = (MultiPartParser, FormParser,)
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user, updated_by=self.request.user)

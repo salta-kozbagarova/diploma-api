@@ -8,10 +8,10 @@ class CarListSerializer(serializers.ListSerializer):
         return Car.objects.bulk_create(cars)
 
 class CarSerializer(serializers.HyperlinkedModelSerializer):
-    # productimage_related = serializers.ListField(
-    #     child=serializers.ImageField()
-    # )
-    productimage_related = serializers.ImageField()
+    productimage_related = serializers.ListField(
+        child=serializers.ImageField()
+    )
+    #productimage_related = serializers.ImageField()
 
     class Meta:
         model = Car
@@ -21,6 +21,7 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
                   'productimage_related')
 
     def create(self, validated_data):
+        print(validated_data)
         carimage = validated_data.pop('productimage_related')
         car = Car.objects.create(**validated_data)
         #TransportImageSerializer.create(TransportImageSerializer(), validated_data=carimage)

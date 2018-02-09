@@ -345,8 +345,9 @@ REST_FRAMEWORK = {
     ),
     'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
-
+import datetime
 JWT_AUTH = {
     'JWT_RESPONSE_PAYLOAD_HANDLER':
     'auction_api.common.utils.jwt_response_payload_handler',
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3000000),
 }
