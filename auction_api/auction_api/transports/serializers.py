@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import Car, CarMake, CarModel, TransportImage, CarBody, Transmission
+from django.db import models
 
 class CarListSerializer(serializers.ListSerializer):
     def create(self, validated_data):
@@ -11,7 +12,7 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
     productimage_related = serializers.ListField(
         child=serializers.ImageField()
     )
-    #productimage_related = serializers.ImageField()
+    # productimage_related = serializers.ImageField()
 
     class Meta:
         model = Car
@@ -23,9 +24,23 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
     def create(self, validated_data):
         print(validated_data)
         carimage = validated_data.pop('productimage_related')
+        print(validated_data)
         car = Car.objects.create(**validated_data)
-        #TransportImageSerializer.create(TransportImageSerializer(), validated_data=carimage)
-        TransportImage.objects.create(product=car, image=carimage)
+        newdata = []
+        for item in carimage:
+            dict = {}
+            dict['product'] = car
+            dict['image'] = item
+            newdata.append(dict)
+        print(newdata)
+        iterable = newdata.all() if isinstance(newdata, models.Manager) else newdata
+        print(iterable)
+        for item in iterable:
+            print(item)
+        # TransportImageSerializer(many=True, data=carimage)
+        # TransportImageSerializer.create(TransportImageSerializer(many=True), validated_data=newdata)
+        # TransportImageListSerializer.create(TransportImageListSerializer(), validated_data=newdata)
+        # TransportImage.objects.create(product=car, image=carimage)
         return car
 
 class CarMakeSerializer(serializers.HyperlinkedModelSerializer):
@@ -48,14 +63,20 @@ class TransmissionSerializer(serializers.HyperlinkedModelSerializer):
         model = Transmission
         fields = ('url', 'id', 'title')
 
-class TransportImageListSerializer(serializers.ListSerializer):
-    def create(self, validated_data):
-        images = [TransportImage(**item) for item in validated_data]
-        return TransportImage.objects.bulk_create(images)
+# class TransportImageListSerializer(serializers.ListSerializer):
+#
+#     class Meta:
+#         model = TransportImage
+#         fields = '__all__'
+#
+#     def create(self, validated_data):
+#         print('we got here')
+#         images = [TransportImage(**item) for item in validated_data]
+#         return TransportImage.objects.bulk_create(images)
 
 class TransportImageSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = TransportImage
-        list_serializer_class = TransportImageListSerializer
+        # list_serializer_class = TransportImageListSerializer
         fields = ('url', 'id', 'product', 'image')
