@@ -10,6 +10,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
                   'productimage_related')
 
 class ProductImageSerializer(serializers.HyperlinkedModelSerializer):
+    image = serializers.ImageField(required=False)
 
     class Meta:
         model = ProductImage

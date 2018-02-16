@@ -2,6 +2,8 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import Car, CarMake, CarModel, TransportImage, CarBody, Transmission
 from django.db import models
+from auction_api.products.serializers import ProductImageSerializer
+from collections import OrderedDict
 
 class CarListSerializer(serializers.ListSerializer):
     def create(self, validated_data):
@@ -12,7 +14,8 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
     productimage_related = serializers.ListField(
         child=serializers.ImageField()
     )
-    # productimage_related = serializers.ImageField()
+    #productimage_related = serializers.ImageField()
+    # productimage_related = ProductImageSerializer(many=True, required=False)
 
     class Meta:
         model = Car
@@ -28,17 +31,18 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
         car = Car.objects.create(**validated_data)
         newdata = []
         for item in carimage:
+            # TransportImage.objects.create(product=car, image=item)
             dict = {}
             dict['product'] = car
             dict['image'] = item
             newdata.append(dict)
         print(newdata)
-        iterable = newdata.all() if isinstance(newdata, models.Manager) else newdata
-        print(iterable)
-        for item in iterable:
-            print(item)
+        # iterable = newdata.all() if isinstance(newdata, models.Manager) else newdata
+        # print(iterable)
+        # for item in iterable:
+        #     print(item)
         # TransportImageSerializer(many=True, data=carimage)
-        # TransportImageSerializer.create(TransportImageSerializer(many=True), validated_data=newdata)
+        #TransportImageSerializer.create(TransportImageSerializer(many=True), validated_data=newdata)
         # TransportImageListSerializer.create(TransportImageListSerializer(), validated_data=newdata)
         # TransportImage.objects.create(product=car, image=carimage)
         return car
