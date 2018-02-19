@@ -11,11 +11,13 @@ class CarListSerializer(serializers.ListSerializer):
         return Car.objects.bulk_create(cars)
 
 class CarSerializer(serializers.HyperlinkedModelSerializer):
-    productimage_related = serializers.ListField(
-        child=serializers.ImageField()
-    )
+    # productimage_related = serializers.ListField(
+    #     child=serializers.ImageField()
+    # )
     #productimage_related = serializers.ImageField()
-    # productimage_related = ProductImageSerializer(many=True, required=False)
+    productimage_related = ProductImageSerializer(many=True, required=False)
+
+    #testimg = serializers.ImageField(source='productimage_related.image')
 
     class Meta:
         model = Car
@@ -31,7 +33,7 @@ class CarSerializer(serializers.HyperlinkedModelSerializer):
         car = Car.objects.create(**validated_data)
         newdata = []
         for item in carimage:
-            # TransportImage.objects.create(product=car, image=item)
+            #TransportImage.objects.create(product=car, image=item)
             dict = {}
             dict['product'] = car
             dict['image'] = item
