@@ -1,7 +1,7 @@
 from django.db import models
 from auction_api.products.models import Product, ProductImage
 import datetime
-from .managers import CarMakeManager
+from .managers import CarMakeManager, CarManager
 from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
@@ -20,10 +20,9 @@ class TransportImage(ProductImage):
     pass
 
 class CarMake(models.Model):
-    objects = CarMakeManager()
-
     code = models.CharField(max_length=255, unique=True)
     title = models.CharField(max_length=255)
+    objects = CarMakeManager()
 
     def natural_key(self):
         return (self.code,)
@@ -97,6 +96,8 @@ class Car(Transport, Product):
         (DRIVE_REAR_WHEEL, 'задний'),
         (DRIVE_ALL_WHEEL, 'полный')
     )
+
+    objects = CarManager()
 
     make = models.ForeignKey(CarMake, on_delete=models.DO_NOTHING, related_name="+", default=None, null=True)
     model = models.ForeignKey(CarModel, on_delete=models.DO_NOTHING, related_name="+", default=None, null=True)

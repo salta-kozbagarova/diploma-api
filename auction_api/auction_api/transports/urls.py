@@ -10,6 +10,7 @@ router.register(r'car-models', views.CarModelViewSet)
 router.register(r'car-bodies', views.CarBodyViewSet)
 router.register(r'transmissions', views.TransmissionViewSet)
 router.register(r'transport-images', views.TransportImageViewSet)
+router.register(r'transport-test', views.CarFormViewSet, 'car-form-create')
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [

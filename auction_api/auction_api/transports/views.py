@@ -1,7 +1,8 @@
 from .models import Car, CarMake, CarModel, TransportImage, CarBody, Transmission
-from .serializers import CarSerializer, CarMakeSerializer, CarModelSerializer, TransportImageSerializer, CarBodySerializer, TransmissionSerializer
+from .serializers import CarSerializer, CarMakeSerializer, CarModelSerializer, TransportImageSerializer, CarBodySerializer, TransmissionSerializer, CarFormSerializer
 from rest_framework import viewsets
 from rest_framework.parsers import FormParser,MultiPartParser
+from rest_framework import mixins
 
 class CarViewSet(viewsets.ModelViewSet):
     """
@@ -81,3 +82,11 @@ class TransportImageViewSet(viewsets.ModelViewSet):
 
     def perform_update(self, serializer):
         serializer.save(updated_by=self.request.user)
+
+class CreateViewSet(mixins.CreateModelMixin,
+                   viewsets.GenericViewSet):
+    pass
+
+class CarFormViewSet(CreateViewSet):
+    serializer_class = CarFormSerializer
+    parser_classes = (MultiPartParser, FormParser,)
