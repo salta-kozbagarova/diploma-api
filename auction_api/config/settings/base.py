@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 import environ
 from django.utils.translation import gettext_lazy as _
+from .custom import *
 
 ROOT_DIR = environ.Path(__file__) - 3  # (auction_api/config/settings/base.py - 3 = auction_api/)
 APPS_DIR = ROOT_DIR.path('auction_api')
