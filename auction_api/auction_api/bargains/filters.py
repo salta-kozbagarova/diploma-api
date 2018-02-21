@@ -79,8 +79,9 @@ class BargainAddressFilter(filters.FilterSet):
 class BargainFilter(filters.FilterSet):
     category = filters.RelatedFilter(BargainCategoryFilter, name='category', queryset=Category.objects.all())
     address = filters.RelatedFilter(BargainAddressFilter, name='address', queryset=AdministrativeDivision.objects.all())
-    current_price = filters.NumericRangeFilter(name='current_price')
     name = filters.AllLookupsFilter(name='name')
+    current_price_min = filters.NumberFilter(name='current_price', lookup_expr='gt', label='Minimum price')
+    current_price_max = filters.NumberFilter(name='current_price', lookup_expr='lt', label='Maximum price')
 
     class Meta:
         model = Bargain

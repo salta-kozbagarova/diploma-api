@@ -24,8 +24,8 @@ def user_directory_path(instance, filename):
 class Bargain(AuctionBaseModel):
     end_date = models.DateTimeField(_('End Date'), auto_now_add=True)
     bargain_type = models.ForeignKey(BargainType, on_delete=models.SET_NULL, default=None, null=True)
-    start_price = models.DecimalField(_('Start Price'), max_digits=10, decimal_places=2)
-    current_price = models.DecimalField(_('Current Price'), max_digits=10, decimal_places=2)
+    start_price = models.IntegerField(_('Start Price'))
+    current_price = models.IntegerField(_('Current Price'))
     name = models.CharField(_('Bargain Name'), max_length=255)
     description = models.TextField(_('Bargain Description'), default=None)
     image = models.ImageField(_('Image'), upload_to=user_directory_path, null=True, default=None)
