@@ -16,6 +16,8 @@ class AdministrativeDivision(models.Model):
     name = models.CharField(_('Administrative Division'), max_length=255)
     parent = models.ForeignKey('self', on_delete=models.CASCADE, default=None, null=True, related_name='subdivisions')
     administrative_level = models.ForeignKey(AdministrativeLevel, on_delete=models.PROTECT, default=None, null=True)
+    lat = models.FloatField(_('Latitude'), null=True)
+    lon = models.FloatField(_('Longitude'), null=True)
 
     def natural_key(self):
         return (self.name,self.administrative_level.name)

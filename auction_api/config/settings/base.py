@@ -50,6 +50,7 @@ DJANGO_APPS = [
     'django.contrib.admin',
     'rest_framework',
     'corsheaders',
+    'django.contrib.gis',
 ]
 THIRD_PARTY_APPS = [
     'crispy_forms',  # Form layouts
@@ -352,3 +353,8 @@ JWT_AUTH = {
     'auction_api.common.utils.jwt_response_payload_handler',
     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3000000),
 }
+
+# Just pasted it like gdal202.dll and it stopped throwing the error 'No module can be found' or smth like that.
+# But don't know if it is right or not.
+# This is gonna be reviewed
+GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal202'

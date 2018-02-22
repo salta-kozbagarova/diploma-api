@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 from django.db import migrations, models
 import django.db.models.deletion
+from django.contrib.postgres.operations import CreateExtension
 
 
 class Migration(migrations.Migration):
@@ -18,4 +19,5 @@ class Migration(migrations.Migration):
             name='parent',
             field=models.ForeignKey(default=None, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='subdivisions', to='administrative_division.AdministrativeDivision'),
         ),
+        CreateExtension('postgis'),
     ]
