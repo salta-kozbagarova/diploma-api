@@ -138,7 +138,8 @@ MANAGERS = ADMINS
 DATABASES = {
     #'default': env.db('DATABASE_URL', default='postgres:///auction_api'),
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        # 'django.db.backends.postgresql',
         'NAME': 'auction_api',
         'USER': 'auction_api',
         'PASSWORD': 'auction_api',

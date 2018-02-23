@@ -1,6 +1,7 @@
 from django.db import models
 from .managers import AdministrativeLevelManager, AdministrativeDivisionManager
 from django.utils.translation import gettext_lazy as _
+from django.contrib.gis.db import models
 
 # Create your models here.
 class AdministrativeLevel(models.Model):
@@ -18,6 +19,8 @@ class AdministrativeDivision(models.Model):
     administrative_level = models.ForeignKey(AdministrativeLevel, on_delete=models.PROTECT, default=None, null=True)
     lat = models.FloatField(_('Latitude'), null=True)
     lon = models.FloatField(_('Longitude'), null=True)
+    poly = models.PolygonField(srid=4326, null=True)
+    point = models.PointField(srid=4326, null=True)
 
     def natural_key(self):
         return (self.name,self.administrative_level.name)
