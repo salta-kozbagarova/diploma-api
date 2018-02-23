@@ -355,7 +355,5 @@ JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3000000),
 }
 
-# Just pasted it like gdal202.dll and it stopped throwing the error 'No module can be found' or smth like that.
-# But don't know if it is right or not.
-# This is gonna be reviewed
+# See: https://docs.djangoproject.com/en/2.0/ref/contrib/gis/install/geolibs/#gdaltrouble
 GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal202'

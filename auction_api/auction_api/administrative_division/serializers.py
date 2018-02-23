@@ -15,10 +15,6 @@ class AdministrativeDivisionSerializer(serializers.HyperlinkedModelSerializer):
         model = AdministrativeDivision
         fields = ('url', 'id', 'name', 'parent', 'parent_id', 'administrative_level', 'administrative_level_id', 'subdivisions')
 
-    def to_representation(self, obj):
-        # HEEERE BABE WE GONNA WORK
-        return super(AdministrativeDivisionSerializer, self).to_representation(obj)
-
 class AdministrativeDivisionDetailSerializer(serializers.HyperlinkedModelSerializer):
 
     response = {}
