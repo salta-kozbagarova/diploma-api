@@ -24,7 +24,8 @@ class AdministrativeDivision(models.Model):
     point = models.PointField(srid=4326, null=True, blank=True)
 
     def save(self, **kwargs):
-        self.point = Point(self.lon, self.lat)
+        if self.lon and self.lat:
+            self.point = Point(self.lon, self.lat)
         super(AdministrativeDivision, self).save(**kwargs)
 
     def natural_key(self):
