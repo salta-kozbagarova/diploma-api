@@ -10,11 +10,12 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
         lookup_field='code'
     )
     subcategories = RecursiveField(many=True)
+    parent_code = serializers.ReadOnlyField(source="parent.code")
 
     class Meta:
         model = Category
-        fields = ('url', 'id', 'code', 'name', 'image', 'parent', 'parent_id', 'subcategories', 'created_by', 'updated_by', 'created_at',
-                  'updated_at', 'is_active', 'is_deleted')
+        fields = ('url', 'id', 'code', 'name', 'image', 'parent', 'parent_id', 'subcategories', 'parent_code',
+                  'created_by', 'updated_by', 'created_at', 'updated_at', 'is_active', 'is_deleted')
         lookup_field = 'code'
         extra_kwargs = {
             'url': {'lookup_field': 'code'}
