@@ -43,7 +43,8 @@
       "image": "bargains/transport/download.png",
       "seen": 458,
       "category": ["used-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -85,7 +86,8 @@
       "image": "bargains/transport/download (2).png",
       "seen": 15,
       "category": ["used-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -169,7 +171,8 @@
       "image": "bargains/transport/1200px-Geneva_MotorShow_2013_-_Lamborghini_Veneno_1.jpg",
       "seen": 458,
       "category": ["new-cars"],
-      "address": ["Актобе", "Город"]
+      "address": ["Актобе", "Город"],
+      "on_top": true
     }
   },
   {
@@ -190,7 +193,8 @@
       "image": "bargains/transport/1509995167_2016-chevrolet-camaro-ss-049.jpg",
       "seen": 458,
       "category": ["new-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -211,7 +215,8 @@
       "image": "bargains/transport/audi-r8.jpg",
       "seen": 458,
       "category": ["new-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -232,7 +237,8 @@
       "image": "bargains/transport/bugatti-veyron.jpg",
       "seen": 458,
       "category": ["new-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -253,7 +259,8 @@
       "image": "bargains/transport/bmw.jpg",
       "seen": 458,
       "category": ["mototechnics"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -274,7 +281,8 @@
       "image": "bargains/transport/harleydavidson.jpg",
       "seen": 458,
       "category": ["mototechnics"],
-      "address": ["Актобе", "Город"]
+      "address": ["Актобе", "Город"],
+      "on_top": true
     }
   },
   {
@@ -316,7 +324,8 @@
       "image": "bargains/transport/peugeot scooters.jpg",
       "seen": 458,
       "category": ["mototechnics"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true
     }
   },
   {
@@ -463,7 +472,8 @@
       "image": "bargains/transport/Helicopter-tour-bridgenorth-1920x1080-resize.jpg",
       "seen": 458,
       "category": ["air-transport"],
-      "address": ["Кокшетау", "Город"]
+      "address": ["Кокшетау", "Город"],
+      "on_top": true
     }
   },
   {

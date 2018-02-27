@@ -85,4 +85,4 @@ class BargainFilter(filters.FilterSet):
 
     class Meta:
         model = Bargain
-        fields = ('id', 'name', 'description', 'bargain_type', 'start_price', 'current_price', 'name', 'category', 'address', 'is_active')
+        fields = ('id', 'name', 'description', 'bargain_type', 'start_price', 'current_price', 'name', 'category', 'address', 'is_active', 'on_top')

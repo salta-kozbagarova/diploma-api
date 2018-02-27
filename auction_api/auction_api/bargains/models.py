@@ -37,9 +37,10 @@ class Bargain(AuctionBaseModel):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, default=None, related_name="bargains", null=True)
     address = models.ForeignKey(AdministrativeDivision, on_delete=models.SET_NULL, default=None, related_name="bargain_addresses", null=True)
     product = models.OneToOneField(Product, on_delete=models.CASCADE, default=None, null=True)
+    on_top = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ('updated_at',)
+        ordering = ('-on_top','-updated_at',)
 
 class BargainBet(AuctionBaseModel):
     bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None)
