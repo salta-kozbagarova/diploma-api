@@ -332,6 +332,8 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'localhost:4200',
     '127.0.0.1:4200',
+    'localhost:4000',
+    '127.0.0.1:4000',
 )
 
 REST_FRAMEWORK = {
