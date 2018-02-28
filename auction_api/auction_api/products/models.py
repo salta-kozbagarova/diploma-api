@@ -20,4 +20,5 @@ def user_directory_path(instance, filename):
 
 class ProductImage(AuctionBaseModel):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="images", default=0)
-    image = models.ImageField(upload_to=user_directory_path)
+    image = models.ImageField(upload_to=user_directory_path, null=True, default=None)
+    is_main = models.BooleanField(default=False)

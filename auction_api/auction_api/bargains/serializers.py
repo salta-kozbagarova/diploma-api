@@ -44,7 +44,7 @@ class BargainSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Bargain
         fields = ('url', 'id', 'end_date', 'bargain_type',
-                  'start_price', 'current_price', 'name', 'description', 'image', 'seen', 'participants',
+                  'start_price', 'current_price', 'image', 'seen', 'participants',
                   'participants_count', 'category', 'comments', 'on_top',
                   'address', 'full_address', 'created_by', 'updated_by', 'created_at', 'updated_at')
 

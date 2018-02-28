@@ -5,6 +5,18 @@ class CarMakeManager(models.Manager):
     def get_by_natural_key(self, code):
         return self.get(code=code)
 
+class CarModelManager(models.Manager):
+    def get_by_natural_key(self, code):
+        return self.get(code=code)
+
+class CarBodyManager(models.Manager):
+    def get_by_natural_key(self, title):
+        return self.get(title=title)
+
+class TransmissionManager(models.Manager):
+    def get_by_natural_key(self, title):
+        return self.get(title=title)
+
 class CarManager(models.Manager):
 
     def create_with_image(self, **data):

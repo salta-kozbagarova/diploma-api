@@ -26,9 +26,6 @@ class Bargain(AuctionBaseModel):
     bargain_type = models.ForeignKey(BargainType, on_delete=models.SET_NULL, default=None, null=True)
     start_price = models.IntegerField(_('Start Price'))
     current_price = models.IntegerField(_('Current Price'))
-    name = models.CharField(_('Bargain Name'), max_length=255)
-    description = models.TextField(_('Bargain Description'), default=None)
-    image = models.ImageField(_('Image'), upload_to=user_directory_path, null=True, default=None)
     seen = models.IntegerField(_('Seen'))
     participants = models.ManyToManyField(settings.AUTH_USER_MODEL, through='BargainBet',
                                           through_fields=('bargain', 'created_by'), related_name="bargains")

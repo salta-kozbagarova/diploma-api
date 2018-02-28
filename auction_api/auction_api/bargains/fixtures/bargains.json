@@ -38,13 +38,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "4880000.00",
       "current_price": "5200000.00",
-      "name": "Mercedes benz S class 350",
-      "description": "Mercedes benz S class 350",
-      "image": "bargains/transport/download.png",
       "seen": 458,
       "category": ["used-cars"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 1
     }
   },
   {
@@ -60,34 +58,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "7080000.00",
       "current_price": "7900000.00",
-      "name": "Audi A3",
-      "description": "Audi A3",
-      "image": "bargains/transport/download (1).png",
-      "seen": 15,
-      "category": ["used-cars"],
-      "address": ["Астана", "Город"]
-    }
-  },
-  {
-    "model": "bargains.bargain",
-    "fields": {
-      "created_by": ["admin"],
-      "updated_by": ["admin"],
-      "created_at": "2018-01-26T10:28:56.940Z",
-      "updated_at": "2018-01-26T10:28:56.940Z",
-      "is_active": true,
-      "is_deleted": false,
-      "end_date": "2018-10-31T16:28:19.908Z",
-      "bargain_type": ["на повышение"],
-      "start_price": "4880000.00",
-      "current_price": "5200000.00",
-      "name": "Волга 21",
-      "description": "Волга 21",
-      "image": "bargains/transport/download (2).png",
       "seen": 15,
       "category": ["used-cars"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "product": 2
     }
   },
   {
@@ -103,12 +77,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "4880000.00",
       "current_price": "5200000.00",
-      "name": "Renault Captur",
-      "description": "Renault Captur",
-      "image": "bargains/transport/download (3).png",
       "seen": 15,
       "category": ["used-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "on_top": true,
+      "product": 3
     }
   },
   {
@@ -124,12 +97,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "4880000.00",
       "current_price": "5200000.00",
-      "name": "Волга 21",
-      "description": "Волга 21",
-      "image": "bargains/transport/download (2).png",
       "seen": 15,
       "category": ["used-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 4
     }
   },
   {
@@ -145,12 +116,29 @@
       "bargain_type": ["на повышение"],
       "start_price": "4880000.00",
       "current_price": "5200000.00",
-      "name": "Renault Captur",
-      "description": "Renault Captur",
-      "image": "bargains/transport/download (3).png",
       "seen": 15,
       "category": ["used-cars"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 5
+    }
+  },
+  {
+    "model": "bargains.bargain",
+    "fields": {
+      "created_by": ["admin"],
+      "updated_by": ["admin"],
+      "created_at": "2018-01-26T10:28:56.940Z",
+      "updated_at": "2018-01-26T10:28:56.940Z",
+      "is_active": true,
+      "is_deleted": false,
+      "end_date": "2018-10-31T16:28:19.908Z",
+      "bargain_type": ["на повышение"],
+      "start_price": "4880000.00",
+      "current_price": "5200000.00",
+      "seen": 15,
+      "category": ["used-cars"],
+      "address": ["Астана", "Город"],
+      "product": 6
     }
   },
   {
@@ -166,13 +154,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "35080000.00",
       "current_price": "48200000.00",
-      "name": "Lamborghini Veneno",
-      "description": "Lamborghini Veneno",
-      "image": "bargains/transport/1200px-Geneva_MotorShow_2013_-_Lamborghini_Veneno_1.jpg",
       "seen": 458,
       "category": ["new-cars"],
       "address": ["Актобе", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 7
     }
   },
   {
@@ -188,13 +174,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "58080000.00",
       "current_price": "59030000.00",
-      "name": "Chevrolet Camaro",
-      "description": "Chevrolet Camaro",
-      "image": "bargains/transport/1509995167_2016-chevrolet-camaro-ss-049.jpg",
       "seen": 458,
       "category": ["new-cars"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 8
     }
   },
   {
@@ -210,13 +194,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "9080000.00",
       "current_price": "10200000.00",
-      "name": "Audi R8",
-      "description": "Audi R8",
-      "image": "bargains/transport/audi-r8.jpg",
       "seen": 458,
       "category": ["new-cars"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 9
     }
   },
   {
@@ -232,13 +214,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "47580000.00",
       "current_price": "89200000.00",
-      "name": "Bugatti Veyron",
-      "description": "Bugatti Veyron",
-      "image": "bargains/transport/bugatti-veyron.jpg",
       "seen": 458,
       "category": ["new-cars"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 10
     }
   },
   {
@@ -254,13 +234,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "BMW",
-      "description": "BMW",
-      "image": "bargains/transport/bmw.jpg",
       "seen": 458,
       "category": ["mototechnics"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 11
     }
   },
   {
@@ -276,13 +254,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Harley Davidson",
-      "description": "Harley Davidson",
-      "image": "bargains/transport/harleydavidson.jpg",
       "seen": 458,
       "category": ["mototechnics"],
       "address": ["Актобе", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 12
     }
   },
   {
@@ -298,12 +274,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Kawasaki Ninja",
-      "description": "Kawasaki Ninja",
-      "image": "bargains/transport/image.jpg",
       "seen": 458,
       "category": ["mototechnics"],
-      "address": ["Актобе", "Город"]
+      "address": ["Актобе", "Город"],
+      "product": 13
     }
   },
   {
@@ -319,13 +293,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Peugeot Scooters",
-      "description": "Peugeot Scooters",
-      "image": "bargains/transport/peugeot scooters.jpg",
       "seen": 458,
       "category": ["mototechnics"],
       "address": ["Астана", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 14
     }
   },
   {
@@ -341,12 +313,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Truck bla bla",
-      "description": "Truck bla bla",
-      "image": "bargains/transport/55-3067466-ibr080515retruck16_fct908x681x90.0_ct620x465.jpg",
       "seen": 458,
       "category": ["trucks"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 15
     }
   },
   {
@@ -362,12 +332,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "daimler-electric-truck",
-      "description": "daimler-electric-truck",
-      "image": "bargains/transport/daimler-electric-truck.jpg",
       "seen": 458,
       "category": ["trucks"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 16
     }
   },
   {
@@ -383,12 +351,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Truck 123",
-      "description": "Truck 123",
-      "image": "bargains/transport/download.jpg",
       "seen": 458,
       "category": ["trucks"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 17
     }
   },
   {
@@ -404,12 +370,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Mercedes Benz Trucks",
-      "description": "Mercedes Benz Trucks",
-      "image": "bargains/transport/mercedes-benz-trucks-rear-axle-systems_1280x686-1280x686.jpg",
       "seen": 458,
       "category": ["trucks"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 18
     }
   },
   {
@@ -425,12 +389,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Peloton Trucks HP",
-      "description": "Peloton Trucks HP",
-      "image": "bargains/transport/PelotonTrucksHP.jpg",
       "seen": 458,
       "category": ["trucks"],
-      "address": ["Кокшетау", "Город"]
+      "address": ["Кокшетау", "Город"],
+      "product": 19
     }
   },
   {
@@ -446,12 +408,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Almarai Trucks",
-      "description": "Almarai Trucks",
-      "image": "bargains/transport/T_Almarai_2013.jpg",
       "seen": 458,
       "category": ["trucks"],
-      "address": ["Кокшетау", "Город"]
+      "address": ["Кокшетау", "Город"],
+      "product": 20
     }
   },
   {
@@ -467,13 +427,11 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Helicopter in auction",
-      "description": "Helicopter in auction",
-      "image": "bargains/transport/Helicopter-tour-bridgenorth-1920x1080-resize.jpg",
       "seen": 458,
       "category": ["air-transport"],
       "address": ["Кокшетау", "Город"],
-      "on_top": true
+      "on_top": true,
+      "product": 21
     }
   },
   {
@@ -489,12 +447,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "13080000.00",
       "current_price": "25000000.00",
-      "name": "Helicopter 789",
-      "description": "Helicopter 789",
-      "image": "bargains/transport/PHELCI_01.jpg",
       "seen": 458,
       "category": ["air-transport"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 22
     }
   },
   {
@@ -510,11 +466,10 @@
       "bargain_type": ["на повышение"],
       "start_price": "5908000.00",
       "current_price": "24300000.00",
-      "name": "Truck without photo",
-      "description": "This is a description that contains words like truck, big truck, brown one",
       "seen": 315,
       "category": ["trucks"],
-      "address": ["Астана", "Город"]
+      "address": ["Астана", "Город"],
+      "product": 23
     }
   }
 ]

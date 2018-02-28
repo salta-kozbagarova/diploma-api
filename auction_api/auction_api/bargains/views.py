@@ -29,9 +29,9 @@ class BargainViewSet(viewsets.ModelViewSet):
         header_and_description = self.request.query_params.get('header_and_description', None)
         if q is not None:
             if header_and_description is not None and header_and_description == 'true':
-                self.queryset = self.queryset.filter(Q(name__icontains=q) | Q(description__icontains=q))
+                self.queryset = self.queryset.filter(Q(product__name__icontains=q) | Q(product__description__icontains=q))
             else:
-                self.queryset = self.queryset.filter(name__icontains=q)
+                self.queryset = self.queryset.filter(product__name__icontains=q)
         only_with_image = self.request.query_params.get('only_with_image', None)
         if only_with_image == 'true':
             self.queryset = self.queryset.filter(image__isnull=False).exclude(image='')
