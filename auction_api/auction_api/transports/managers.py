@@ -25,7 +25,10 @@ class CarManager(models.Manager):
         images = data.pop('image')
         car = car_model(**data)
         car.save()
+        main_is_set=False
         for image in images:
-            transport_image = image_model(product=car, image=image)
+            transport_image = image_model(product=car, image=image, is_main=not main_is_set)
+            if not main_is_set:
+                main_is_set = True
             transport_image.save()
         return car

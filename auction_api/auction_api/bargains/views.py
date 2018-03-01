@@ -34,7 +34,8 @@ class BargainViewSet(viewsets.ModelViewSet):
                 self.queryset = self.queryset.filter(product__name__icontains=q)
         only_with_image = self.request.query_params.get('only_with_image', None)
         if only_with_image == 'true':
-            self.queryset = self.queryset.filter(image__isnull=False).exclude(image='')
+            self.queryset = self.queryset.filter(product__images__isnull=False).distinct()
+                # .exclude(product__images='')
         return self.queryset
 
     def list(self, request, *args, **kwargs):

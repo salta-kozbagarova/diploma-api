@@ -40,12 +40,13 @@ class BargainSerializer(serializers.HyperlinkedModelSerializer):
     address = AdministrativeDivisionDetailSerializer()
     full_address = serializers.SerializerMethodField()
     comments = BargainCommentSerializer(many=True)
+    product = ProductSerializer()
 
     class Meta:
         model = Bargain
         fields = ('url', 'id', 'end_date', 'bargain_type',
-                  'start_price', 'current_price', 'image', 'seen', 'participants',
-                  'participants_count', 'category', 'comments', 'on_top',
+                  'start_price', 'current_price', 'seen', 'participants',
+                  'participants_count', 'category', 'comments', 'on_top', 'product',
                   'address', 'full_address', 'created_by', 'updated_by', 'created_at', 'updated_at')
 
     def get_participants_count(self, obj):

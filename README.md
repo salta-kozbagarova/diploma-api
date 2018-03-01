@@ -13,3 +13,4 @@ other
 realestates
 transports
 bargains
+search_radius

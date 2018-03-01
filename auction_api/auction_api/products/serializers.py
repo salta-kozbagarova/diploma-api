@@ -26,6 +26,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     #     queryset=ProductImage.objects.all(),
     #     many=True
     # )
+    images = ProductImageSerializer(many=True)
 
     class Meta:
         model = Product
