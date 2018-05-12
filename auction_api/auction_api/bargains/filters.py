@@ -3,6 +3,7 @@ from auction_api.categories.models import Category
 import rest_framework_filters as filters
 from django.db.models.constants import LOOKUP_SEP
 from auction_api.administrative_division.models import AdministrativeDivision
+from auction_api.products.models import Product
 
 def categories(request):
     category_code = request.query_params.get('category__code')
@@ -76,12 +77,19 @@ class BargainAddressFilter(filters.FilterSet):
         except AdministrativeDivision.DoesNotExist:
             return None
 
+class BargainProductFilter(filters.FilterSet):
+    name = filters.AllLookupsFilter(name='name')
+    class Meta:
+        model = Product
+        fields = ('name',)
+
 class BargainFilter(filters.FilterSet):
     category = filters.RelatedFilter(BargainCategoryFilter, name='category', queryset=Category.objects.all())
     address = filters.RelatedFilter(BargainAddressFilter, name='address', queryset=AdministrativeDivision.objects.all())
     current_price_min = filters.NumberFilter(name='current_price', lookup_expr='gt', label='Minimum price')
     current_price_max = filters.NumberFilter(name='current_price', lookup_expr='lt', label='Maximum price')
+    product = filters.RelatedFilter(BargainProductFilter, name='product', queryset=Product.objects.all())
 
     class Meta:
         model = Bargain
-        fields = ('id', 'bargain_type', 'start_price', 'current_price', 'category', 'address', 'is_active', 'on_top')
+        fields = ('id', 'bargain_type', 'start_price', 'current_price', 'category', 'address', 'is_active', 'on_top', 'product')

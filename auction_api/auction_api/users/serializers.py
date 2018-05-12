@@ -17,8 +17,14 @@ class UserPhoneSerializer(serializers.HyperlinkedModelSerializer):
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     addresses = AdministrativeDivisionSerializer(many=True)
     phonenumbers = UserPhoneSerializer(many=True)
+    photo = serializers.SerializerMethodField()
 
     class Meta:
         model = User
-        fields = ('url', 'id', 'username', 'is_staff', 'password', 'addresses', 'phonenumbers')
+        fields = ('url', 'id', 'username', 'is_staff', 'password', 'addresses', 'phonenumbers', 'photo', 'name', 'email')
         extra_kwargs = {'password': {'write_only': True}}
+
+    def get_photo(self, obj):
+        if not obj.photo:
+            return 'http://i.pravatar.cc/200'
+        return obj.photo

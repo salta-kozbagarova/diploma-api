@@ -1,5 +1,4 @@
 from django.db import models
-from django.apps import apps
 
 class CarMakeManager(models.Manager):
     def get_by_natural_key(self, code):
