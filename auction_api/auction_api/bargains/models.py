@@ -7,6 +7,8 @@ from auction_api.administrative_division.models import AdministrativeDivision
 from .managers import BargainTypeManager
 from auction_api.products.models import Product
 from django.utils import timezone
+from django.contrib.contenttypes.models import ContentType
+from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
 
 class BargainType(AuctionBaseModel):
     objects = BargainTypeManager()
@@ -36,8 +38,22 @@ class Bargain(AuctionBaseModel):
     product = models.OneToOneField(Product, on_delete=models.CASCADE, default=None, null=True)
     on_top = models.BooleanField(default=False)
 
+    content_type = models.OneToOneField(ContentType, on_delete=models.CASCADE, default=None)
+    object_id = models.PositiveIntegerField()
+    bargained_object = GenericForeignKey('content_type', 'object_id')
+
     class Meta:
         ordering = ('-on_top','-updated_at',)
+
+    def __str__(self):
+        return '#{}: {}: {}'.format(self.pk, self.category, self.product)
+
+class Bookmark(models.Model):
+    """
+    A bookmark consists of a URL, and 0 or more descriptive tags.
+    """
+    url = models.URLField()
+    bargain = GenericRelation(Bargain)
 
 class BargainBet(AuctionBaseModel):
     bargain = models.ForeignKey(Bargain, on_delete=models.CASCADE, default=None)

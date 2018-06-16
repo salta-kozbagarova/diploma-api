@@ -13,6 +13,9 @@ class Product(AuctionBaseModel):
     description = models.TextField()
     color = models.ForeignKey(Color, on_delete=models.SET_NULL, related_name="+", default=None, null=True)
 
+    def __str__(self):
+        return self.name
+
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/products/<child_class_name>/<filename>
     folder_name = instance._meta.app_label.lower()

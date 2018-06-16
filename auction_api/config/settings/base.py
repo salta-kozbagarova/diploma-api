@@ -50,7 +50,7 @@ DJANGO_APPS = [
     'django.contrib.admin',
     'rest_framework',
     'corsheaders',
-    'django.contrib.gis',
+    # 'django.contrib.gis',
 ]
 THIRD_PARTY_APPS = [
     'crispy_forms',  # Form layouts
@@ -138,8 +138,8 @@ MANAGERS = ADMINS
 DATABASES = {
     #'default': env.db('DATABASE_URL', default='postgres:///auction_api'),
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        # 'django.db.backends.postgresql',
+        # 'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'auction_api',
         'USER': 'auction_api',
         'PASSWORD': 'auction_api',
@@ -358,4 +358,4 @@ JWT_AUTH = {
 }
 
 # See: https://docs.djangoproject.com/en/2.0/ref/contrib/gis/install/geolibs/#gdaltrouble
-GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal202'
+# GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal202'
